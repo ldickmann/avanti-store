@@ -1,0 +1,39 @@
+/* Reset de CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #ffffff;
+}
+
+/* Estilo da mini-navbar */
+.mini-navbar {
+  background-color: #005cff;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.retangulo {
+  border-radius: 4px;
+  background-color: #6220c1;
+  padding: 0px 10px;
+}
+
+/* Estilo da navbar principal */
