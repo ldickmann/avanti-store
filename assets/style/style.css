@@ -37,3 +37,33 @@ body {
 }
 
 /* Estilo da navbar principal */
+
+.navbar-main {
+  width: 1260px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 20px;
+  margin: 0 auto;
+}
+
+.navbar-search {
+  background: url("../icons/search-icon.svg") no-repeat right 10px center;
+  background-size: 20px;
+  border: 1px solid #DDD;
+  border-radius: 10px;
+  padding-right: 40px;
+  padding-left: 20px;
+  display: flex;
+  width: 594px;
+  height: 40px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.navbar-search::placeholder {
+  color: #000000;
+  font-family: "Nunito Sans", sans-serif;
+}
