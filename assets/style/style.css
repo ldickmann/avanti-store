@@ -161,6 +161,66 @@ body {
   line-height: 22px;
 }
 
+/* Estilos de main */
+.section-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e7e7ea;
+}
+
+/* .image-cadeira {
+} */
+
+.container-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.banner-title {
+  color: #000000;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.banner-title-highlight {
+  color: #000000;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.banner-subtitle {
+  color: #005cff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 7.5px;
+  text-transform: uppercase;
+}
+
+.banner-discount {
+  color: #005cff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
 /* Responsividade Mobile */
 @media screen and (max-width: 425px) {
   header {
