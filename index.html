@@ -17,10 +17,14 @@
 
     <nav class="navbar-main">
       <div class="container-navbar">
-        <img src="./assets/images/logo-avanti.svg" alt="Logo Avanti" />
+        <!-- Icone de menu mobile -->
+        <img src="./assets/icons/menu-icon-mobile.svg" alt="Icone de menu mobile" class="menu-icon-mobile" />
+        <!-- Logo Avanti -->
+        <img src="./assets/images/logo-avanti.svg" alt="Logo Avanti" class="logo-avanti" />
+        <!-- barra de busca -->
         <input type="search" class="navbar-search" placeholder="Digite aqui o que você procura" />
         <div class="navbar-user">
-          <img src="./assets/icons/people-icon.svg" alt="Icone de usuário" />
+          <img src="./assets/icons/people-icon.svg" alt="Icone de usuário" class="people-icon" />
           <p class="text-user">Olá,<br>Nome cliente!</p>
           <div class="container-cart">
             <img src="./assets/icons/carrinho-icon.svg" alt="Icone de carrinho" />
@@ -28,9 +32,17 @@
           </div>
         </div>
       </div>
+
+      <!-- Container mobile da barra de buscar -->
+      <div class="container-navbar-search">
+        <input type="search" class="navbar-search-mobile" placeholder="Digite aqui o que você procura" />
+      </div>
+
+      <!-- Container mobile do icone de usuário e carrinho -->
       <div class="container-navbar-menu">
         <ul class="navbar-menu-list">
           <li class="navbar-menu-item">
+            <!-- Icone de menu -->
             <img src="./assets/icons/menu-icon.svg" alt="Icone de menu" class="menu-icon" />
             <a href="#">Todas as Categorias</a>
           </li>
@@ -62,7 +74,9 @@
       </div>
     </nav>
   </header>
+
   <main></main>
+
   <footer></footer>
 </body>
 

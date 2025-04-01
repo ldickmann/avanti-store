@@ -50,6 +50,10 @@ body {
   margin: 0 auto;
 }
 
+.container-navbar-search {
+  display: none;
+}
+
 /* Estilos do input de pesquisa */
 .navbar-search {
   background: url("../icons/search-icon.svg") no-repeat right 10px center;
@@ -141,10 +145,9 @@ body {
   line-height: 22px;
 }
 
-/* .navbar-menu-item:hover {
-  color: #005cff;
-  transition: all 0.3s ease-in-out;
-} */
+.menu-icon-mobile {
+  display: none;
+}
 
 .menu-icon {
   cursor: pointer;
@@ -159,11 +162,12 @@ body {
 }
 
 /* Responsividade Mobile */
-@media screen and (min-width: 390px) {
+@media screen and (max-width: 425px) {
   header {
     width: 100%;
   }
 
+  /* Estilo da mini-navbar */
   .mini-navbar {
     height: 52px;
     padding: 4px 22px;
@@ -173,21 +177,64 @@ body {
     text-align: center;
   }
 
+  /* Estilo da navbar principal */
   .container-navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    padding: 22px 27px 0px 16px;
   }
 
-  .menu-icon,
-  .container-cart,
-  .navbar-user img {
-    display: block;
+  .menu-icon {
+    display: none;
+  }
+
+  .menu-icon-mobile {
+    display: inline-block;
+  }
+
+  .logo-avanti {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .people-icon,
+  .text-user,
+  .container-navbar-menu {
+    display: none;
+  }
+
+  /* Estilos do container do input de pesquisa */
+  .container-navbar-search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 27px 0px 16px 0px;
   }
 
   .navbar-search {
-    display: block;
-    width: 100%;
-    margin-top: 10px;
+    display: none;
+  }
+
+  .navbar-search-mobile {
+    background: url("../icons/search-icon.svg") no-repeat right 10px center;
+    background-size: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding-right: 40px;
+    padding-left: 20px;
+    display: flex;
+    width: 361px;
+    height: 40px;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+  }
+
+  .navbar-search-mobile::placeholder {
+    color: #000000;
+    font-family: "Nunito Sans", sans-serif;
   }
 }
