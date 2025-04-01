@@ -39,6 +39,10 @@ body {
 /* Estilo da navbar principal */
 
 .navbar-main {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);
+}
+
+.container-navbar {
   width: 1260px;
   display: flex;
   justify-content: space-around;
@@ -47,10 +51,12 @@ body {
   margin: 0 auto;
 }
 
+/* Estilos do input de pesquisa */
+
 .navbar-search {
   background: url("../icons/search-icon.svg") no-repeat right 10px center;
   background-size: 20px;
-  border: 1px solid #DDD;
+  border: 1px solid #ddd;
   border-radius: 10px;
   padding-right: 40px;
   padding-left: 20px;
@@ -66,4 +72,42 @@ body {
 .navbar-search::placeholder {
   color: #000000;
   font-family: "Nunito Sans", sans-serif;
+}
+
+/* Estilos do container navbar-user */
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.text-user {
+  color: #000000;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 14px;
+}
+
+.container-cart {
+  position: relative;
+  display: inline-block;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -7px;
+  right: -14px;
+  width: 21px;
+  height: 21px;
+  background-color: #005cff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
 }
