@@ -37,7 +37,6 @@ body {
 }
 
 /* Estilo da navbar principal */
-
 .navbar-main {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);
 }
@@ -45,14 +44,13 @@ body {
 .container-navbar {
   width: 1260px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 20px 20px;
+  padding: 17px 0px 0px 0px;
   margin: 0 auto;
 }
 
 /* Estilos do input de pesquisa */
-
 .navbar-search {
   background: url("../icons/search-icon.svg") no-repeat right 10px center;
   background-size: 20px;
@@ -110,4 +108,86 @@ body {
   font-size: 12px;
   font-weight: 700;
   color: #ffffff;
+}
+
+/* Estilos do container navbar-menu */
+.container-navbar-menu {
+  width: 1260px;
+  margin: 0 auto;
+  padding: 23px 0px 18px 0px;
+  display: flex;
+}
+
+.navbar-menu-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.navbar-menu-list a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.navbar-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+/* .navbar-menu-item:hover {
+  color: #005cff;
+  transition: all 0.3s ease-in-out;
+} */
+
+.menu-icon {
+  cursor: pointer;
+}
+
+.navbar-menu-item-departamento {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+/* Responsividade Mobile */
+@media screen and (min-width: 390px) {
+  header {
+    width: 100%;
+  }
+
+  .mini-navbar {
+    height: 52px;
+    padding: 4px 22px;
+  }
+
+  .navbar-link {
+    text-align: center;
+  }
+
+  .container-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu-icon,
+  .container-cart,
+  .navbar-user img {
+    display: block;
+  }
+
+  .navbar-search {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+  }
 }
