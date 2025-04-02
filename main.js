@@ -19,9 +19,24 @@ document.addEventListener("DOMContentLoaded", () => {
     menuIcon.src = "./assets/icons/menu-icon.svg";
   }
 
-  // Exibe o dropdown ao passar o mouse sobre o menu ou o próprio dropdown
+  // Exibe o dropdown ao passar o mouse sobre o menu.
   menuToggle.addEventListener("mouseenter", showDropdown);
   menuToggle.addEventListener("mouseleave", hideDropdown);
   dropdownMenu.addEventListener("mouseenter", showDropdown);
   dropdownMenu.addEventListener("mouseleave", hideDropdown);
+
+  // Manipula a troca do icone de seta ao passar o mouse
+  const dropdownItems = document.querySelectorAll(".dropdown-item");
+
+  dropdownItems.forEach((item) => {
+    const arrowImg = item.querySelector(".arrow-right");
+    if (arrowImg) {
+      item.addEventListener("mouseenter", () => {
+        arrowImg.src = "./assets/icons/arrow-right-blue.svg";
+      });
+      item.addEventListener("mouseleave", () => {
+        arrowImg.src = "./assets/icons/arrow-right.svg";
+      });
+    }
+  });
 });

@@ -1,147 +1,209 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./assets/style/style.css" />
+    <title>Avanti Store</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./assets/style/style.css" />
-  <title>Avanti Store</title>
-</head>
+  <body>
+    <header>
+      <nav class="mini-navbar">
+        <a
+          class="navbar-link"
+          href="#"
+          >Ganhe <span class="retangulo">$10,00</span> de desconto no seu
+          primeiro pedido. Utilize o cupom DESCONTO10</a
+        >
+      </nav>
 
-<body>
-  <header>
-    <nav class="mini-navbar">
-      <a class="navbar-link" href="#">Ganhe <span class="retangulo">$10,00</span> de desconto no seu
-        primeiro pedido. Utilize o cupom DESCONTO10</a>
-    </nav>
-
-    <nav class="navbar-main">
-      <div class="container-navbar">
-        <!-- Icone de menu mobile -->
-        <img src="./assets/icons/menu-icon-mobile.svg" alt="Icone de menu mobile" class="menu-icon-mobile" />
-        <!-- Logo Avanti -->
-        <img src="./assets/images/logo-avanti.svg" alt="Logo Avanti" class="logo-avanti" />
-        <!-- barra de busca -->
-        <input type="search" class="navbar-search" placeholder="Digite aqui o que você procura" />
-        <div class="navbar-user">
-          <img src="./assets/icons/people-icon.svg" alt="Icone de usuário" class="people-icon" />
-          <p class="text-user">Olá,<br>Nome cliente!</p>
-          <div class="container-cart">
-            <img src="./assets/icons/carrinho-icon.svg" alt="Icone de carrinho" />
-            <span class="cart-badge">2</span>
+      <nav class="navbar-main">
+        <div class="container-navbar">
+          <!-- Icone de menu mobile -->
+          <img
+            src="./assets/icons/menu-icon-mobile.svg"
+            alt="Icone de menu mobile"
+            class="menu-icon-mobile" />
+          <!-- Logo Avanti -->
+          <img
+            src="./assets/images/logo-avanti.svg"
+            alt="Logo Avanti"
+            class="logo-avanti" />
+          <!-- barra de busca -->
+          <input
+            type="search"
+            class="navbar-search"
+            placeholder="Digite aqui o que você procura" />
+          <div class="navbar-user">
+            <img
+              src="./assets/icons/people-icon.svg"
+              alt="Icone de usuário"
+              class="people-icon" />
+            <p class="text-user">Olá,<br />Nome cliente!</p>
+            <div class="container-cart">
+              <img
+                src="./assets/icons/carrinho-icon.svg"
+                alt="Icone de carrinho" />
+              <span class="cart-badge">2</span>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Container mobile da barra de buscar -->
-      <div class="container-navbar-search">
-        <input type="search" class="navbar-search-mobile" placeholder="Digite aqui o que você procura" />
-      </div>
+        <!-- Container mobile da barra de buscar -->
+        <div class="container-navbar-search">
+          <input
+            type="search"
+            class="navbar-search-mobile"
+            placeholder="Digite aqui o que você procura" />
+        </div>
 
-      <div class="container-navbar-menu">
-        <ul class="navbar-menu-list">
+        <div class="container-navbar-menu">
+          <ul class="navbar-menu-list">
+            <!-- Container com dropdown -->
+            <div
+              class="menu-title"
+              id="menuToggle">
+              <img
+                src="./assets/icons/menu-icon.svg"
+                alt="Ícone de menu"
+                class="menu-icon"
+                id="menuIcon" />
+              <h4 class="navbar-menu-title">Todas as Categorias</h4>
+            </div>
 
-          <!-- Container com dropdown -->
-          <div class="menu-title" id="menuToggle">
-            <img src="./assets/icons/menu-icon.svg" alt="Ícone de menu" class="menu-icon" id="menuIcon" />
-            <h4 class="navbar-menu-title">Todas as Categorias</h4>
-          </div>
+            <!-- Dropdown (lista de departamentos e categorias) -->
+            <div
+              class="dropdowns-container"
+              id="dropdownMenu">
+              <!-- Lista de Departamentos -->
+              <div class="container-dropdown">
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item">
+                    <a href="#"
+                      >Departamento
+                      <img
+                        src="./assets/icons/arrow-right.svg"
+                        alt="Seta para direita"
+                        class="arrow-right" />
+                    </a>
+                  </li>
+                  <li class="dropdown-item"><a href="#">Departamento</a></li>
+                  <li class="dropdown-item"><a href="#">Departamento</a></li>
+                  <li class="dropdown-item"><a href="#">Departamento</a></li>
+                  <li class="dropdown-item"><a href="#">Departamento</a></li>
+                  <li class="dropdown-item"><a href="#">Departamento</a></li>
+                  <li class="dropdown-item"><a href="#">Departamento</a></li>
+                  <li class="dropdown-item"><a href="#">Departamento</a></li>
+                  <li class="dropdown-item"><a href="#">Departamento</a></li>
+                  <li class="dropdown-item"><a href="#">Departamento</a></li>
+                  <li class="dropdown-item"><a href="#">Departamento</a></li>
+                  <li class="dropdown-item"><a href="#">Departamento</a></li>
+                  <li class="dropdown-item"><a href="#">Departamento</a></li>
+                  <li class="dropdown-item"><a href="#">Departamento</a></li>
+                  <li class="dropdown-item"><a href="#">Departamento</a></li>
+                </ul>
 
-          <!-- Dropdown (lista de departamentos e categorias) -->
-          <div class="dropdowns-container" id="dropdownMenu">
-            <!-- Lista de Departamentos -->
-            <div class="container-dropdown">
-              <ul class="dropdown-menu">
-                <li class="dropdown-item"><a href="#">Departamento</a></li>
-                <li class="dropdown-item"><a href="#">Departamento</a></li>
-                <li class="dropdown-item"><a href="#">Departamento</a></li>
-                <li class="dropdown-item"><a href="#">Departamento</a></li>
-                <li class="dropdown-item"><a href="#">Departamento</a></li>
-                <li class="dropdown-item"><a href="#">Departamento</a></li>
-                <li class="dropdown-item"><a href="#">Departamento</a></li>
-                <li class="dropdown-item"><a href="#">Departamento</a></li>
-                <li class="dropdown-item"><a href="#">Departamento</a></li>
-                <li class="dropdown-item"><a href="#">Departamento</a></li>
-                <li class="dropdown-item"><a href="#">Departamento</a></li>
-                <li class="dropdown-item"><a href="#">Departamento</a></li>
-                <li class="dropdown-item"><a href="#">Departamento</a></li>
-                <li class="dropdown-item"><a href="#">Departamento</a></li>
-                <li class="dropdown-item"><a href="#">Departamento</a></li>
-              </ul>
+                <!-- Container de categorias -->
+                <div class="container-categorias">
+                  <div class="container-dropdown-categoria">
+                    <ul class="dropdown-menu-categorias">
+                      <li class="dropdown-item"><a href="#">Categoria</a></li>
+                      <li class="dropdown-item"><a href="#">Categoria</a></li>
+                      <li class="dropdown-item"><a href="#">Categoria</a></li>
+                      <li class="dropdown-item"><a href="#">Categoria</a></li>
+                      <li class="dropdown-item"><a href="#">Categoria</a></li>
+                      <li class="dropdown-item"><a href="#">Categoria</a></li>
+                      <li class="dropdown-item"><a href="#">Categoria</a></li>
+                      <li class="dropdown-item"><a href="#">Categoria</a></li>
+                    </ul>
+                  </div>
 
-              <!-- Container de categorias -->
-              <div class="container-categorias">
-                <div class="container-dropdown-categoria">
-                  <ul class="dropdown-menu-categorias">
-                    <li class="dropdown-item"><a href="#">Categoria</a></li>
-                    <li class="dropdown-item"><a href="#">Categoria</a></li>
-                    <li class="dropdown-item"><a href="#">Categoria</a></li>
-                    <li class="dropdown-item"><a href="#">Categoria</a></li>
-                    <li class="dropdown-item"><a href="#">Categoria</a></li>
-                    <li class="dropdown-item"><a href="#">Categoria</a></li>
-                    <li class="dropdown-item"><a href="#">Categoria</a></li>
-                    <li class="dropdown-item"><a href="#">Categoria</a></li>
-                  </ul>
-                </div>
+                  <div class="container-dropdown-categoria">
+                    <ul class="dropdown-menu-categorias">
+                      <li class="dropdown-item"><a href="#">Categoria</a></li>
+                      <li class="dropdown-item"><a href="#">Categoria</a></li>
+                      <li class="dropdown-item"><a href="#">Categoria</a></li>
+                      <li class="dropdown-item"><a href="#">Categoria</a></li>
+                      <li class="dropdown-item"><a href="#">Categoria</a></li>
+                      <li class="dropdown-item"><a href="#">Categoria</a></li>
+                      <li class="dropdown-item"><a href="#">Categoria</a></li>
+                      <li class="dropdown-item"><a href="#">Categoria</a></li>
+                    </ul>
+                  </div>
 
-                <div class="container-dropdown-categoria">
-                  <ul class="dropdown-menu-categorias">
-                    <li class="dropdown-item"><a href="#">Categoria</a></li>
-                    <li class="dropdown-item"><a href="#">Categoria</a></li>
-                    <li class="dropdown-item"><a href="#">Categoria</a></li>
-                    <li class="dropdown-item"><a href="#">Categoria</a></li>
-                    <li class="dropdown-item"><a href="#">Categoria</a></li>
-                    <li class="dropdown-item"><a href="#">Categoria</a></li>
-                    <li class="dropdown-item"><a href="#">Categoria</a></li>
-                    <li class="dropdown-item"><a href="#">Categoria</a></li>
-                  </ul>
-                </div>
-
-                <div class="container-dropdown-categoria">
-                  <ul class="dropdown-menu-categorias">
-                    <li class="dropdown-item"><a href="#">Categoria</a></li>
-                    <li class="dropdown-item"><a href="#">Categoria</a></li>
-                    <li class="dropdown-item"><a href="#">Categoria</a></li>
-                    <li class="dropdown-item"><a href="#">Categoria</a></li>
-                    <li class="dropdown-item"><a href="#">Categoria</a></li>
-                    <li class="dropdown-item"><a href="#">Categoria</a></li>
-                    <li class="dropdown-item"><a href="#">Categoria</a></li>
-                    <li class="dropdown-item"><a href="#">Categoria</a></li>
-                  </ul>
+                  <div class="container-dropdown-categoria">
+                    <ul class="dropdown-menu-categorias">
+                      <li class="dropdown-item"><a href="#">Categoria</a></li>
+                      <li class="dropdown-item"><a href="#">Categoria</a></li>
+                      <li class="dropdown-item"><a href="#">Categoria</a></li>
+                      <li class="dropdown-item"><a href="#">Categoria</a></li>
+                      <li class="dropdown-item"><a href="#">Categoria</a></li>
+                      <li class="dropdown-item"><a href="#">Categoria</a></li>
+                      <li class="dropdown-item"><a href="#">Categoria</a></li>
+                      <li class="dropdown-item"><a href="#">Categoria</a></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Itens fixos da navbar -->
-          <li class="navbar-menu-item-departamento"><a href="#">Departamento</a></li>
-          <li class="navbar-menu-item-departamento"><a href="#">Departamento</a></li>
-          <li class="navbar-menu-item-departamento"><a href="#">Departamento</a></li>
-          <li class="navbar-menu-item-departamento"><a href="#">Departamento</a></li>
-          <li class="navbar-menu-item-departamento"><a href="#">Departamento</a></li>
-          <li class="navbar-menu-item-departamento"><a href="#">Departamento</a></li>
-          <li class="navbar-menu-item-departamento"><a href="#">Departamento</a></li>
-          <li class="navbar-menu-item-departamento"><a href="#">Departamento</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+            <!-- Itens fixos da navbar -->
+            <li class="navbar-menu-item-departamento">
+              <a href="#">Departamento</a>
+            </li>
+            <li class="navbar-menu-item-departamento">
+              <a href="#">Departamento</a>
+            </li>
+            <li class="navbar-menu-item-departamento">
+              <a href="#">Departamento</a>
+            </li>
+            <li class="navbar-menu-item-departamento">
+              <a href="#">Departamento</a>
+            </li>
+            <li class="navbar-menu-item-departamento">
+              <a href="#">Departamento</a>
+            </li>
+            <li class="navbar-menu-item-departamento">
+              <a href="#">Departamento</a>
+            </li>
+            <li class="navbar-menu-item-departamento">
+              <a href="#">Departamento</a>
+            </li>
+            <li class="navbar-menu-item-departamento">
+              <a href="#">Departamento</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-  <main>
-    <section class="section-one">
-      <img src="./assets/images/image-cadeira.jpg" alt="Imagem de cadeira" class="image-cadeira" />
-      <img src="./assets/images/image-cadeira-mobile.jpg" alt="Imagem de cadeira mobile" class="image-cadeira-mobile" />
-      <div class="container-banner">
-        <h1 class="banner-title"><span class="banner-title-highlight">super</span>sale</h1>
-        <h3 class="banner-subtitle">Itens selecionados com até</h3>
-        <h3 class="banner-subtitle-mobile">Selected items up to</h3>
-        <h2 class="banner-discount">50%off</h2>
-      </div>
-    </section>
-  </main>
+    <main>
+      <section class="section-one">
+        <img
+          src="./assets/images/image-cadeira.jpg"
+          alt="Imagem de cadeira"
+          class="image-cadeira" />
+        <img
+          src="./assets/images/image-cadeira-mobile.jpg"
+          alt="Imagem de cadeira mobile"
+          class="image-cadeira-mobile" />
+        <div class="container-banner">
+          <h1 class="banner-title">
+            <span class="banner-title-highlight">super</span>sale
+          </h1>
+          <h3 class="banner-subtitle">Itens selecionados com até</h3>
+          <h3 class="banner-subtitle-mobile">Selected items up to</h3>
+          <h2 class="banner-discount">50%off</h2>
+        </div>
+      </section>
+    </main>
 
-  <footer></footer>
-  <script src="./main.js"></script>
-</body>
-
+    <footer></footer>
+    <script src="./main.js"></script>
+  </body>
 </html>

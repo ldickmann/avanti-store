@@ -195,13 +195,15 @@ body {
 }
 
 .dropdown-item:hover {
-  background: #e6e6e6;
+  background-color: #e6e6e6;
   font-weight: bold;
   color: #0056b3;
 }
 
 /* Adiciona a seta para indicar submenu */
 .dropdown-item a {
+  display: flex;
+  justify-content: space-between;
   text-decoration: none;
   color: inherit;
   width: 100%;
