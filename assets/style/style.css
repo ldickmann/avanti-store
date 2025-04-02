@@ -216,6 +216,28 @@ body {
   margin: 18px 0px 75px 34px;
 }
 
+.container-dropdown-categoria {
+  display: flex;
+  flex-direction: column;
+  width: 190px;
+}
+
+.dropdown-menu-categorias {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dropdown-item-categoria {
+  font-size: 14px;
+  list-style: none;
+}
+
+.dropdown-item-categoria a {
+  text-decoration: none;
+  color: #656565;
+}
+
 .navbar-menu-item-departamento {
   font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
