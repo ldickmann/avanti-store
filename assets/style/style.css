@@ -241,6 +241,7 @@ body {
 /* .container-dropdown-image {
 } */
 
+/* ====== Menu fixos da navbar ====== */
 .navbar-menu-item-departamento {
   font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
@@ -324,13 +325,13 @@ body {
   text-transform: uppercase;
 }
 
-/* Responsividade Mobile */
+/* ======= Media Queries ======= */
 @media screen and (max-width: 425px) {
   header {
     width: 100%;
   }
 
-  /* Estilo da mini-navbar */
+  /* ======= Estilo da mini navbar ======= */
   .mini-navbar {
     height: 52px;
     padding: 4px 22px;
@@ -340,7 +341,7 @@ body {
     text-align: center;
   }
 
-  /* Estilo da navbar principal */
+  /* ===== Estilo da navbar principal ===== */
   .container-navbar {
     display: flex;
     align-items: center;
@@ -368,7 +369,7 @@ body {
     display: none;
   }
 
-  /* Estilos do container do input de pesquisa */
+  /* ====== Estilo do input de pesquisa ===== */
   .container-navbar-search {
     width: 100%;
     display: flex;
@@ -401,7 +402,7 @@ body {
     font-family: "Nunito Sans", sans-serif;
   }
 
-  /* Estilos da section one */
+  /* ======= Section One ======= */
   .section-one {
     width: 100%;
     justify-content: flex-start;
