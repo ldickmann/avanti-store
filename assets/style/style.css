@@ -282,6 +282,28 @@ body {
   line-height: 27px;
 }
 
+.button-categorias {
+  position: absolute;
+  top: 200px;
+  left: 30px;
+  width: 116px;
+  height: 38px;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid #fff;
+}
+
+.text-button {
+  color: #fff;
+  text-align: center;
+  font-family: "Heebo", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
 /* ====== Menu fixos da navbar ====== */
 .navbar-menu-item-departamento {
   font-family: "Nunito Sans", sans-serif;
