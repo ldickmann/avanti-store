@@ -42,15 +42,28 @@ document.addEventListener("DOMContentLoaded", () => {
   // Manipula a troca do icone de seta ao passar o mouse
   const dropdownItems = document.querySelectorAll(".dropdown-item");
 
-  dropdownItems.forEach((item) => {
+  dropdownItems.forEach((item, index) => {
     const arrowImg = item.querySelector(".arrow-right");
     if (arrowImg) {
-      item.addEventListener("mouseenter", () => {
+      if (index === 0) {
+        // Mantém o primeiro icone de seta azul
         arrowImg.src = "./assets/icons/arrow-right-blue.svg";
-      });
-      item.addEventListener("mouseleave", () => {
+        item.addEventListener("mouseenter", () => {
+          arrowImg.src = "./assets/icons/arrow-right-blue.svg";
+        });
+        item.addEventListener("mouseleave", () => {
+          arrowImg.src = "./assets/icons/arrow-right-blue.svg";
+        });
+      } else {
+        // Altera o icon conforme passa o mouse
         arrowImg.src = "./assets/icons/arrow-right.svg";
-      });
+        item.addEventListener("mouseenter", () => {
+          arrowImg.src = "./assets/icons/arrow-right-blue.svg";
+        });
+        item.addEventListener("mouseleave", () => {
+          arrowImg.src = "./assets/icons/arrow-right.svg";
+        });
+      }
     }
   });
 });

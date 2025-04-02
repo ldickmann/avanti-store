@@ -162,6 +162,11 @@ body {
   opacity: 1;
 }
 
+.dropdowns-container.active .dropdown-menu li:first-child a {
+  color: #005cff;
+  font-weight: 700;
+}
+
 .container-dropdown {
   display: flex;
   background: #fff;
