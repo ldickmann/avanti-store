@@ -153,10 +153,13 @@ body {
   visibility: hidden;
   top: 170px;
   z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
 .dropdowns-container.active {
   visibility: visible;
+  opacity: 1;
 }
 
 .container-dropdown {
