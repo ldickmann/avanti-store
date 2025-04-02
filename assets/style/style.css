@@ -1,5 +1,4 @@
 /* Reset de CSS */
-
 * {
   margin: 0;
   padding: 0;
@@ -126,6 +125,11 @@ body {
 .container-dropdown {
   display: flex;
   gap: 8px;
+  position: relative;
+}
+
+.container-dropdown.active .navbar-menu-title {
+  color: #005cff;
 }
 
 .navbar-menu-title {
@@ -136,25 +140,18 @@ body {
   font-weight: 700;
   line-height: 22px;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 40px;
+  top: 100%;
   left: 0;
-  background-color: white;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  width: 150px;
+  background-color: #f5f5f5;
   z-index: 10;
-}
-
-.dropdown-content a {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  color: black;
+  max-height: 290px;
+  overflow-y: auto;
 }
 
 .dropdown-content a:hover {
@@ -163,6 +160,22 @@ body {
 
 .dropdown-content.active {
   display: block;
+}
+
+.menu-itens-dropdown {
+  display: flex;
+  gap: 12px;
+  color: #303030 !important;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 6px 27px 6px 16px;
+}
+
+.arrow-right {
+  margin-left: 94px;
 }
 
 .navbar-menu-list {
@@ -204,7 +217,7 @@ body {
   line-height: 22px;
 }
 
-/* Estilos de main */
+/* Estilos da main */
 .section-one {
   display: flex;
   justify-content: center;
