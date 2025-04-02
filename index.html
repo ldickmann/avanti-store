@@ -38,32 +38,82 @@
         <input type="search" class="navbar-search-mobile" placeholder="Digite aqui o que você procura" />
       </div>
 
-      <!-- Container mobile do icone de usuário e carrinho -->
       <div class="container-navbar-menu">
         <ul class="navbar-menu-list">
+
           <!-- Container com dropdown -->
-          <div class="container-dropdown">
+          <div class="menu-title" id="menuToggle">
             <img src="./assets/icons/menu-icon.svg" alt="Ícone de menu" class="menu-icon" id="menuIcon" />
             <h4 class="navbar-menu-title">Todas as Categorias</h4>
-            <div class="dropdown-content" id="dropdownContent">
-              <a class="menu-itens-dropdown" href="#">Departamento
-                <img src="./assets/icons/arrow-right.svg" alt="Seta para direita" class="arrow-right" />
-              </a>
-              <a class="menu-itens-dropdown" href="#">Departamento</a>
-              <a class="menu-itens-dropdown" href="#">Departamento</a>
-              <a class="menu-itens-dropdown" href="#">Departamento</a>
-              <a class="menu-itens-dropdown" href="#">Departamento</a>
-              <a class="menu-itens-dropdown" href="#">Departamento</a>
-              <a class="menu-itens-dropdown" href="#">Departamento</a>
-              <a class="menu-itens-dropdown" href="#">Departamento</a>
-              <a class="menu-itens-dropdown" href="#">Departamento</a>
-              <a class="menu-itens-dropdown" href="#">Departamento</a>
-              <a class="menu-itens-dropdown" href="#">Departamento</a>
-              <a class="menu-itens-dropdown" href="#">Departamento</a>
-              <a class="menu-itens-dropdown" href="#">Departamento</a>
-              <a class="menu-itens-dropdown" href="#">Departamento</a>
+          </div>
+
+          <!-- Dropdown (lista de departamentos e categorias) -->
+          <div class="dropdowns-container" id="dropdownMenu">
+            <!-- Lista de Departamentos -->
+            <div class="container-dropdown">
+              <ul class="dropdown-menu">
+                <li class="dropdown-item"><a href="#">Departamento</a></li>
+                <li class="dropdown-item"><a href="#">Departamento</a></li>
+                <li class="dropdown-item"><a href="#">Departamento</a></li>
+                <li class="dropdown-item"><a href="#">Departamento</a></li>
+                <li class="dropdown-item"><a href="#">Departamento</a></li>
+                <li class="dropdown-item"><a href="#">Departamento</a></li>
+                <li class="dropdown-item"><a href="#">Departamento</a></li>
+                <li class="dropdown-item"><a href="#">Departamento</a></li>
+                <li class="dropdown-item"><a href="#">Departamento</a></li>
+                <li class="dropdown-item"><a href="#">Departamento</a></li>
+                <li class="dropdown-item"><a href="#">Departamento</a></li>
+                <li class="dropdown-item"><a href="#">Departamento</a></li>
+                <li class="dropdown-item"><a href="#">Departamento</a></li>
+                <li class="dropdown-item"><a href="#">Departamento</a></li>
+                <li class="dropdown-item"><a href="#">Departamento</a></li>
+              </ul>
+
+              <!-- Container de categorias -->
+              <div class="container-categorias">
+                <div class="container-dropdown-categoria">
+                  <ul class="dropdown-menu-categorias">
+                    <li class="dropdown-item"><a href="#">Categoria</a></li>
+                    <li class="dropdown-item"><a href="#">Categoria</a></li>
+                    <li class="dropdown-item"><a href="#">Categoria</a></li>
+                    <li class="dropdown-item"><a href="#">Categoria</a></li>
+                    <li class="dropdown-item"><a href="#">Categoria</a></li>
+                    <li class="dropdown-item"><a href="#">Categoria</a></li>
+                    <li class="dropdown-item"><a href="#">Categoria</a></li>
+                    <li class="dropdown-item"><a href="#">Categoria</a></li>
+                  </ul>
+                </div>
+
+                <div class="container-dropdown-categoria">
+                  <ul class="dropdown-menu-categorias">
+                    <li class="dropdown-item"><a href="#">Categoria</a></li>
+                    <li class="dropdown-item"><a href="#">Categoria</a></li>
+                    <li class="dropdown-item"><a href="#">Categoria</a></li>
+                    <li class="dropdown-item"><a href="#">Categoria</a></li>
+                    <li class="dropdown-item"><a href="#">Categoria</a></li>
+                    <li class="dropdown-item"><a href="#">Categoria</a></li>
+                    <li class="dropdown-item"><a href="#">Categoria</a></li>
+                    <li class="dropdown-item"><a href="#">Categoria</a></li>
+                  </ul>
+                </div>
+
+                <div class="container-dropdown-categoria">
+                  <ul class="dropdown-menu-categorias">
+                    <li class="dropdown-item"><a href="#">Categoria</a></li>
+                    <li class="dropdown-item"><a href="#">Categoria</a></li>
+                    <li class="dropdown-item"><a href="#">Categoria</a></li>
+                    <li class="dropdown-item"><a href="#">Categoria</a></li>
+                    <li class="dropdown-item"><a href="#">Categoria</a></li>
+                    <li class="dropdown-item"><a href="#">Categoria</a></li>
+                    <li class="dropdown-item"><a href="#">Categoria</a></li>
+                    <li class="dropdown-item"><a href="#">Categoria</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
+
+          <!-- Itens fixos da navbar -->
           <li class="navbar-menu-item-departamento"><a href="#">Departamento</a></li>
           <li class="navbar-menu-item-departamento"><a href="#">Departamento</a></li>
           <li class="navbar-menu-item-departamento"><a href="#">Departamento</a></li>
@@ -74,7 +124,6 @@
           <li class="navbar-menu-item-departamento"><a href="#">Departamento</a></li>
         </ul>
       </div>
-
     </nav>
   </header>
 
