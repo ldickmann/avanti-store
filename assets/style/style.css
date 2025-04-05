@@ -131,7 +131,11 @@ body {
   cursor: pointer;
 }
 
-.menu-icon {
+.dropbtn:hover {
+  color: #005cff;
+}
+
+.fa-bars {
   margin-right: 8px;
 }
 
