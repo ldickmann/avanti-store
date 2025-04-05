@@ -4,6 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const dropdownMenu = document.getElementById("dropdownMenu");
   const menuIcon = document.getElementById("menuIcon");
   const navbarMenuTitle = document.querySelector(".navbar-menu-title");
+  const departamentoToggle = document.getElementById("departamentoToggle");
+  const dropdownDepartamentos = document.getElementById(
+    "dropdownDepartamentos"
+  );
 
   /**
    * Exibe o menu suspenso ativando seus elementos.
@@ -32,6 +36,22 @@ document.addEventListener("DOMContentLoaded", () => {
     navbarMenuTitle.classList.remove("active");
     menuIcon.src = "./assets/icons/menu-icon.svg";
   }
+
+  function showDepartamentos() {
+    dropdownDepartamentos.classList.add("active");
+    departamentoToggle.classList.add("active");
+  }
+
+  function hideDepartamentos() {
+    dropdownDepartamentos.classList.remove("active");
+    departamentoToggle.classList.remove("active");
+  }
+
+  // Exibe o dropdown de departamentos ao passar o mouse sobre o menu.
+  departamentoToggle.addEventListener("mouseenter", showDepartamentos);
+  departamentoToggle.addEventListener("mouseleave", hideDepartamentos);
+  dropdownDepartamentos.addEventListener("mouseenter", showDepartamentos);
+  dropdownDepartamentos.addEventListener("mouseleave", hideDepartamentos);
 
   // Exibe o dropdown ao passar o mouse sobre o menu.
   menuToggle.addEventListener("mouseenter", showDropdown);
