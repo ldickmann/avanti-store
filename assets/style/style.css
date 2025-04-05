@@ -395,6 +395,84 @@ body {
   text-transform: uppercase;
 }
 
+/* ======= Section Two ======= */
+
+/* ====== Section Three ====== */
+.section-three {
+  max-width: 1177px;
+  margin: 0 auto;
+  margin-top: 96px;
+  margin-bottom: 55px;
+}
+
+.container-card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-image-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 652px;
+  height: 747px;
+  flex-shrink: 0;
+  background: #c2c2c2;
+}
+
+.image-card {
+  width: 523.376px;
+  height: 528.171px;
+  transform: rotate(-7.544deg);
+}
+
+.container-texts-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 37.5px;
+  gap: 22px;
+}
+
+.title-card {
+  color: #000;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.description-card {
+  color: #000;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.9px;
+}
+
+/* ====== Section Four ====== */
+.section-four {
+  width: 100%;
+  background-color: #dedede;
+}
+
+.container-card-2 {
+  max-width: 1177px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 0px 0px 50px 0px; */
+}
+
 /* ======= Media Queries ======= */
 @media screen and (max-width: 425px) {
   header {
