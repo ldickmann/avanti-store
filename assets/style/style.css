@@ -470,7 +470,52 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 0px 0px 50px 0px; */
+  padding-top: 41px;
+  padding-bottom: 49px;
+  gap: 52px;
+}
+
+.container-texts-card-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.title-card-2 {
+  color: #4f4f4f;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.container-circle-description {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.ellipse {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background-color: #005cff;
+}
+
+.description-card-2 {
+  color: #4f4f4f;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.9px;
 }
 
 /* ======= Media Queries ======= */
