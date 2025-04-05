@@ -131,6 +131,7 @@ body {
   cursor: pointer;
 }
 
+.dropbtn.hover-active,
 .dropbtn:hover {
   color: #005cff;
 }
@@ -186,9 +187,17 @@ body {
   display: block;
 }
 
-/* Icone */
-.fa-angle-right {
+.dropdown-departamento-div a:first-child {
+  color: #005cff;
+  font-weight: 700;
+}
+
+.dropdown-departamento-div a i {
   margin-left: 94px;
+}
+
+.dropdown-departamento-div a:first-child i {
+  margin-left: 90px;
 }
 
 .dropdown-categorias-main {
@@ -210,6 +219,11 @@ body {
   color: #656565;
   font-size: 14px;
   text-decoration: none;
+}
+
+.dropdown-categorias-div a:first-child {
+  color: #005cff;
+  font-weight: 700;
 }
 
 .card-produtos {
