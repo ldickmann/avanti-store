@@ -49,7 +49,7 @@ body {
   margin: 0 auto;
 }
 
-.menu-icon-mobile {
+.fa-bars.mobile {
   display: none;
 }
 
@@ -407,12 +407,9 @@ body {
     padding: 22px 27px 0px 16px;
   }
 
-  .menu-icon {
-    display: none;
-  }
-
-  .menu-icon-mobile {
-    display: inline-block;
+  .fa-bars.mobile {
+    display: block;
+    margin-right: 0px;
   }
 
   .logo-avanti {
@@ -422,8 +419,21 @@ body {
 
   .people-icon,
   .text-user,
-  .container-navbar-menu {
+  .navbar-menu {
     display: none;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 16px;
+    gap: 13px;
+    position: absolute;
+    top: 110px;
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
   }
 
   /* ====== Estilo do input de pesquisa ===== */
