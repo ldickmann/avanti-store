@@ -1,7 +1,7 @@
 /* Quando o usuário clica no botão,
 alterne entre ocultar e mostrar o conteúdo suspenso */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
+function dropdownFunction() {
+  document.getElementById("dropdownAllCategories").classList.toggle("show");
 }
 
 // Fecha o menu suspenso se o usuário clicar fora dele
