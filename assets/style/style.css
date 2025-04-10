@@ -396,6 +396,45 @@ body {
 }
 
 /* ======= Section Two ======= */
+.section-two {
+  max-width: 1290px;
+  margin: 0 auto;
+}
+
+.link-title-carousel {
+  color: #303030;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+/* Carousel */
+.badge-new-carousel {
+  background-color: #00264e;
+}
+
+.card img {
+  object-fit: contain;
+  height: 250px;
+}
+
+.carousel-inner {
+  padding: 1rem;
+}
+
+.badge-10-carousel {
+  background-color: #5ec0be;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 /* ====== Section Three ====== */
 .section-three {
@@ -530,7 +569,6 @@ body {
 }
 
 /* ======= Section Six ======= */
-/* Carousel */
 
 /* ======= Section Seven ======= */
 .section-seven {
