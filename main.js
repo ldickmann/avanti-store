@@ -77,3 +77,10 @@ document.querySelectorAll(".menu-footer h4").forEach((title) => {
     title.parentElement.classList.toggle("active");
   });
 });
+
+/* Função para a busca na barra de pesquisa do header */
+document.getElementById("btnSearch").addEventListener("click", function () {
+  var searchTerm = document.querySelector(".navbar-search").value;
+  document.getElementById("searchResult").textContent =
+    "Você buscou por: " + searchTerm + "";
+});

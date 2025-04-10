@@ -45,11 +45,20 @@
             src="./assets/images/logo-avanti.svg"
             alt="Logo Avanti"
             class="logo-avanti" />
+
           <!-- barra de busca -->
-          <input
-            type="search"
-            class="navbar-search"
-            placeholder="Digite aqui o que você procura" />
+          <div class="search-container">
+            <input
+              type="search"
+              class="navbar-search"
+              placeholder="Digite aqui o que você procura" />
+            <button id="btnSearch">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <div id="searchResult"></div>
+          </div>
+
+          <!-- Icone de carrinho -->
           <div class="navbar-user">
             <img
               src="./assets/icons/people-icon.svg"
