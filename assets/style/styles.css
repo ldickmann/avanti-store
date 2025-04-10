@@ -455,6 +455,10 @@ body {
   align-items: center;
 }
 
+.container-card-mobile {
+  display: none;
+}
+
 .container-image-card {
   display: flex;
   justify-content: center;
@@ -823,7 +827,7 @@ footer {
 }
 
 /* ======= Media Queries ======= */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 430px) {
   header {
     width: 100%;
   }
@@ -963,5 +967,113 @@ footer {
 
   .banner-discount {
     font-size: 32px;
+  }
+
+  /* ======= Section Two ======= */
+
+  /* ====== Section Three ====== */
+  .section-three {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 56px;
+    margin-bottom: 48px;
+  }
+
+  .container-card {
+    display: none;
+  }
+
+  .container-card-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+  }
+
+  .container-texts-card-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    padding-inline: 20px;
+  }
+
+  .title-card-mobile {
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0.96px;
+    text-transform: uppercase;
+  }
+
+  .description-card-mobile {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.7px;
+  }
+
+  /* ====== Section Four ====== */
+  .container-card-2 {
+    flex-direction: column;
+    padding-top: 28px;
+    padding-bottom: 0px;
+    gap: 21px;
+  }
+
+  .image-card-2 {
+    width: 349px;
+    height: 349px;
+    order: 1;
+  }
+
+  .container-texts-card-2 {
+    order: 2;
+    gap: 21px;
+  }
+
+  .title-card-2 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .container-circle-description {
+    margin-top: 0px;
+    padding-inline: 20px;
+    gap: 14px;
+  }
+
+  .ellipse {
+    width: 60px;
+    height: 60px;
+  }
+
+  .icon-map-pin {
+    width: 30px;
+    height: 30px;
+  }
+
+  .description-card-2 {
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.6px;
+  }
+
+  /* ======= Section Five ======= */
+
+  /* ======= Section Six ======= */
+  .section-six {
+    display: none;
   }
 }
