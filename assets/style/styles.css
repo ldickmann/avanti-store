@@ -1092,4 +1092,37 @@ footer {
     font-weight: 600;
     margin: 0;
   }
+
+  /* ======= Section Eight ======= */
+  .section-eight {
+    margin-top: 56px;
+  }
+
+  .title-newsletter {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .span-newsletter {
+    font-size: 16px;
+  }
+
+  .container-cadastro {
+    flex-direction: column;
+    margin-inline: 11px;
+    padding: 38px 16px;
+    gap: 16px;
+  }
+
+  .input-newsletter-name {
+    width: 100%;
+  }
+
+  .input-newsletter-email {
+    width: 100%;
+  }
+
+  .button-newsletter {
+    width: 100%;
+  }
 }
