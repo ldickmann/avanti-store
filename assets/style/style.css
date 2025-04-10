@@ -584,6 +584,37 @@ body {
   font-weight: 700;
 }
 
+.container-cadastro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+  padding: 64px 114px;
+  background-color: #dedede;
+  border-radius: 8px;
+}
+
+.container-newsletter-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.label-newsletter-checkbox {
+  color: #656565;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.span-newsletter-checkbox {
+  text-decoration: underline;
+}
+
 /* ======= Media Queries ======= */
 @media screen and (max-width: 425px) {
   header {
