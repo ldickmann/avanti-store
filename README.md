@@ -4,9 +4,8 @@
 
 - O desafio consiste em desenvolver um layout proposto no Figma utilizando HTML, CSS e JavaScript (e no máximo bootstrap ou outro framework CSS). O layout deve ser responsivo e funcionar em dispositivos móveis e desktop.
 
-## Em desenvolvimento...
+## Descrição do Projeto
 
-- A versão desktop está pronta, porém agora estou tratando a responsividade para dispositivos móveis.
 - O layout está sendo desenvolvido com HTML, CSS e JavaScript, e apenas no Carousel estou utilizando o Bootstrap.
 
 ## Tecnologias Utilizadas
