@@ -70,3 +70,10 @@ mobileIcon.addEventListener("click", function () {
     navbarMenu.classList.toggle("active"); // Alterna a classe "active" no menu da navbar
   }
 });
+
+/* Adiciona active (dropdown) nas listas ul do footer - para telas responsivas */
+document.querySelectorAll(".menu-footer h4").forEach((title) => {
+  title.addEventListener("click", () => {
+    title.parentElement.classList.toggle("active");
+  });
+});
