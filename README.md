@@ -31,7 +31,7 @@
 ## Estrutura do Projeto
 
 ```
-c:\Users\ldick\testes\avanti-innovation-class\avanti-store
+"raiz"\avanti-store
 ├── index.html
 ├── css/
 ├── js/
