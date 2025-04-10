@@ -595,6 +595,30 @@ body {
   border-radius: 8px;
 }
 
+.input-newsletter-name {
+  padding: 15px 24px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.input-newsletter-name::placeholder {
+  color: #303030;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.input-newsletter-email {
+  padding: 15px 24px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.input-newsletter-email::placeholder {
+  color: #303030;
+  font-size: 14px;
+  font-weight: 400;
+}
+
 .container-newsletter-checkbox {
   display: flex;
   justify-content: center;
@@ -604,7 +628,6 @@ body {
 
 .label-newsletter-checkbox {
   color: #656565;
-  font-family: "Nunito Sans", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
@@ -613,6 +636,22 @@ body {
 
 .span-newsletter-checkbox {
   text-decoration: underline;
+}
+
+.button-newsletter {
+  padding: 14px 24px;
+  background-color: #005cff;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-newsletter-text {
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
 }
 
 /* ======= Media Queries ======= */
