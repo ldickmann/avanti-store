@@ -562,6 +562,28 @@ body {
   line-height: 140%;
 }
 
+/* ======= Section Eight ======= */
+.section-eight {
+  max-width: 1260px;
+  margin: 0 auto;
+  margin-top: 64px;
+}
+
+.title-newsletter {
+  color: #000000;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.span-newsletter {
+  color: #005cff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
 /* ======= Media Queries ======= */
 @media screen and (max-width: 425px) {
   header {
