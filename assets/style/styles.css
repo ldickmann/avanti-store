@@ -399,6 +399,7 @@ body {
 .section-two {
   max-width: 1290px;
   margin: 0 auto;
+  margin-top: 96px;
 }
 
 .link-title-carousel {
@@ -572,6 +573,7 @@ body {
 }
 
 /* ======= Section Six ======= */
+/* Estilizado a partir da Section Two */
 
 /* ======= Section Seven ======= */
 .section-seven {
@@ -582,6 +584,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 64px;
 }
 
 .background-text-banner {
