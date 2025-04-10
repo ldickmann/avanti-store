@@ -428,12 +428,15 @@ body {
 
 .carousel-control-prev,
 .carousel-control-next {
-  background-color: white;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  top: 50%;
-  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  padding-top: 230px;
+  opacity: 1;
+}
+
+.icon-arrow-carousel {
+  color: #005cff;
+  font-size: 30px;
 }
 
 /* ====== Section Three ====== */
