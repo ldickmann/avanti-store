@@ -605,7 +605,6 @@ body {
   text-align: center;
   font-family: "Nunito Sans", sans-serif;
   font-size: 30px;
-  font-style: normal;
   font-weight: 400;
   line-height: 140%;
 }
@@ -1076,5 +1075,21 @@ footer {
   /* ======= Section Six ======= */
   .section-six {
     display: none;
+  }
+
+  /* ======= Section Seven ======= */
+  .section-seven {
+    height: 449px;
+    margin-top: 48px;
+  }
+
+  .background-text-banner {
+    height: 75px;
+  }
+
+  .text-banner {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
   }
 }
