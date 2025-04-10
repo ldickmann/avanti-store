@@ -973,6 +973,45 @@ footer {
   }
 
   /* ======= Section Two ======= */
+  .section-two .carousel-inner .row {
+    display: flex;
+  }
+
+  .section-two .carousel-inner .row > * {
+    flex: 0 0 50%;
+  }
+
+  .section-two .carousel-inner .row > *:nth-child(n + 3) {
+    display: none;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+
+  .card img {
+    height: 158px;
+    margin-top: 10px;
+  }
+
+  .carousel-inner {
+    padding: 0rem;
+  }
+
+  .card-body {
+    padding: 8px 10px 0px 10px;
+  }
+
+  .card-body h6 {
+    color: #303030;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .badge-10-carousel {
+    margin-left: 0 !important;
+  }
 
   /* ====== Section Three ====== */
   .section-three {
