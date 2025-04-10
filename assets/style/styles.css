@@ -808,6 +808,10 @@ footer {
   line-height: 20px;
 }
 
+.text-footer-two-mobile {
+  display: none;
+}
+
 .container-logo-footer-two {
   max-width: 296px;
   margin: 0 auto;
@@ -1176,5 +1180,25 @@ footer {
 
   .menu-footer.active .title-menu-footer::after {
     background-image: url("../icons/icon-arrow-up-blue.svg");
+  }
+
+  .container-logos {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 300px;
+  }
+
+  .text-footer-two {
+    display: none;
+  }
+
+  .text-footer-two-mobile {
+    display: flex;
+    padding-inline: 16px;
+    color: #303030;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
   }
 }
