@@ -329,7 +329,9 @@ body {
   top: 160px;
   background-color: #fff;
   max-width: 1260px;
+  width: 1260px;
   max-height: 329px;
+  height: 329px;
   padding: 19px 16px;
   box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.1);
   z-index: 1;
@@ -343,19 +345,50 @@ body {
 .dropdown-categoria-main-div {
   display: flex;
   max-width: 1260px;
+  max-height: 329px;
 }
 
 .departamento-title {
   color: #000000;
   font-size: 16px;
   font-weight: 700;
+  margin-bottom: 0;
+}
+
+.dropdown-departamento-categoria-main {
+  display: flex;
+  gap: 127px;
+  padding-top: 17px;
 }
 
 .dropdown-departamento-container-categoria {
   display: flex;
   flex-direction: column;
-  width: 1260px;
-  max-height: 329px;
+  align-items: center;
+  gap: 12px;
+}
+
+.dropdown-departamento-container-categoria a {
+  color: #656565;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.card-produtos-departamento {
+  bottom: 310px;
+  width: 236px;
+  height: 298px;
+  margin: 20px 24px 11px auto;
+  position: relative;
+  border-radius: 10px;
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.75) -20.45%,
+      rgba(0, 0, 0, 0) 138.31%
+    ),
+    url("../images/img-caneca-avanti.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 /* ===== Section One ===== */
