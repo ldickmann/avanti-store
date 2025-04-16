@@ -170,7 +170,7 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 150px;
+  top: 160px;
   background-color: #fff;
   max-width: 1260px;
   max-height: 329px;
@@ -389,6 +389,50 @@ body {
     url("../images/img-caneca-avanti.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.card-produtos-title-departamento {
+  width: 150px;
+  padding: 44px 0px 0px 28px;
+}
+
+.title-one-departamento {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: -0.12px;
+}
+
+.title-two-departamento {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.card-produtos-departamento-button {
+  position: relative;
+  top: 20px;
+  left: 28px;
+  width: 116px;
+  height: 38px;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.card-produtos-departamento-button-text {
+  color: #fff;
+  text-align: center;
+  font-family: "Heebo", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 /* ===== Section One ===== */
