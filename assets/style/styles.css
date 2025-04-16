@@ -337,6 +337,12 @@ body {
   z-index: 1;
 }
 
+.dropbtn-departamento.hover-active,
+.dropbtn-departamento:hover {
+  color: #005cff;
+  font-weight: 700;
+}
+
 /* Mostra o dropdown quando passa o mouse sobre o botão */
 .show-departamento {
   display: block;
