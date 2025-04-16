@@ -867,21 +867,30 @@ footer {
 
   /* ===== Estilo da navbar principal ===== */
   .container-navbar {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    max-width: 100%;
     padding: 22px 27px 0px 16px;
+  }
+
+  /* Centraliza a logo com posicionamento absoluto */
+  .logo-avanti {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    margin: 0 auto;
   }
 
   .fa-bars.mobile {
     display: block;
-    margin-right: 0px;
   }
 
-  .logo-avanti {
-    max-width: 100%;
-    height: auto;
+  .navbar-user {
+    position: relative;
+    z-index: 2;
   }
 
   .people-icon,
@@ -912,6 +921,10 @@ footer {
   }
 
   .navbar-search {
+    display: none;
+  }
+
+  #btnSearch {
     display: none;
   }
 
