@@ -374,6 +374,11 @@ body {
   text-decoration: none;
 }
 
+.dropdown-departamento-container-categoria a:first-child {
+  color: #005cff;
+  font-weight: 700;
+}
+
 .card-produtos-departamento {
   bottom: 310px;
   width: 236px;
