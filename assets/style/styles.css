@@ -1071,16 +1071,6 @@ footer {
     width: 100%;
   }
 
-  /* .image-cadeira {
-    display: none;
-  } */
-
-  /* .image-cadeira-mobile {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  } */
-
   .container-banner-mobile {
     max-width: 100%;
     display: flex;
