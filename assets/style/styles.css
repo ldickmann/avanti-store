@@ -454,6 +454,10 @@ body {
   background: #e7e7ea;
 }
 
+.mobile-slider {
+  display: none;
+}
+
 /* .image-cadeira {
 } */
 
@@ -1056,18 +1060,36 @@ footer {
     justify-content: flex-start;
   }
 
-  .image-cadeira {
+  /* Oculta os elementos da versão desktop */
+  .section-one > img,
+  .container-banner {
     display: none;
   }
+  /* Exibe o slider mobile */
+  .mobile-slider {
+    display: flex;
+    width: 100%;
+  }
 
-  .image-cadeira-mobile {
+  /* .image-cadeira {
+    display: none;
+  } */
+
+  /* .image-cadeira-mobile {
     display: block;
     max-width: 100%;
     height: auto;
+  } */
+
+  .container-banner-mobile {
+    max-width: 100%;
+    display: flex;
   }
 
-  .container-banner {
-    max-width: 100%;
+  .carousel-caption-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .banner-title-highlight {

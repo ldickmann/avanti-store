@@ -210,8 +210,8 @@
 
   <main>
     <section class="section-one">
+      <!-- Banner Principal - versão Desktop -->
       <img src="./assets/images/image-cadeira.jpg" alt="Imagem de cadeira" class="image-cadeira" />
-      <img src="./assets/images/image-cadeira-mobile.jpg" alt="Imagem de cadeira mobile" class="image-cadeira-mobile" />
       <div class="container-banner">
         <h1 class="banner-title">
           <span class="banner-title-highlight">super</span>sale
@@ -219,6 +219,57 @@
         <h3 class="banner-subtitle">Itens selecionados com até</h3>
         <h3 class="banner-subtitle-mobile">Selected items up to</h3>
         <h2 class="banner-discount">50%off</h2>
+      </div>
+
+      <!-- Versão Mobile: slider com 3 slides -->
+      <div id="mobileCarousel" class="carousel slide mobile-slider" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container-banner-mobile">
+              <img src="./assets/images/image-cadeira-mobile.jpg" class="d-block w-100" alt="Slide 1">
+              <div class="carousel-caption-mobile">
+                <h1 class="banner-title">
+                  <span class="banner-title-highlight">super</span>sale
+                </h1>
+                <h3 class="banner-subtitle">Itens selecionados com até</h3>
+                <h3 class="banner-subtitle-mobile">Selected items up to</h3>
+                <h2 class="banner-discount">50%off</h2>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container-banner-mobile">
+              <img src="./assets/images/image-cadeira-mobile.jpg" class="d-block w-100" alt="Slide 2">
+              <div class="carousel-caption-mobile">
+                <h1 class="banner-title">
+                  <span class="banner-title-highlight">super</span>sale
+                </h1>
+                <h3 class="banner-subtitle">Itens selecionados com até</h3>
+                <h3 class="banner-subtitle-mobile">Selected items up to</h3>
+                <h2 class="banner-discount">50%off</h2>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container-banner-mobile">
+              <img src="./assets/images/image-cadeira-mobile.jpg" class="d-block w-100" alt="Slide 3">
+              <div class="carousel-caption-mobile">
+                <h1 class="banner-title">
+                  <span class="banner-title-highlight">super</span>sale
+                </h1>
+                <h3 class="banner-subtitle">Itens selecionados com até</h3>
+                <h3 class="banner-subtitle-mobile">Selected items up to</h3>
+                <h2 class="banner-discount">50%off</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#mobileCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#mobileCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#mobileCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
       </div>
     </section>
 
