@@ -326,9 +326,11 @@ body {
 .dropdown-categoria {
   display: none;
   position: absolute;
-  top: 150px;
+  top: 160px;
   background-color: #fff;
   max-width: 1260px;
+  max-height: 329px;
+  padding: 19px 16px;
   box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
@@ -336,6 +338,17 @@ body {
 /* Mostra o dropdown quando passa o mouse sobre o botão */
 .show-departamento {
   display: block;
+}
+
+.dropdown-categoria-main-div {
+  display: flex;
+  max-width: 1260px;
+}
+
+.departamento-title {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .dropdown-departamento-container-categoria {

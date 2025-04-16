@@ -1,209 +1,157 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
-      crossorigin="anonymous" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-    <link
-      rel="stylesheet"
-      href="./assets/style/styles.css" />
-    <title>Avanti Store</title>
-  </head>
 
-  <body>
-    <header>
-      <nav class="mini-navbar">
-        <a
-          class="navbar-link"
-          href="#"
-          >Ganhe <span class="retangulo">$10,00</span> de desconto no seu
-          primeiro pedido. Utilize o cupom DESCONTO10</a
-        >
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="./assets/style/styles.css" />
+  <title>Avanti Store</title>
+</head>
 
-      <nav class="navbar-main">
-        <div class="container-navbar">
-          <!-- Icone de menu mobile -->
-          <i class="fa-solid fa-bars mobile"></i>
-          <!-- Logo Avanti -->
-          <img
-            src="./assets/images/logo-avanti.svg"
-            alt="Logo Avanti"
-            class="logo-avanti" />
+<body>
+  <header>
+    <nav class="mini-navbar">
+      <a class="navbar-link" href="#">Ganhe <span class="retangulo">$10,00</span> de desconto no seu
+        primeiro pedido. Utilize o cupom DESCONTO10</a>
+    </nav>
 
-          <!-- barra de busca -->
-          <div class="search-container">
-            <input
-              type="search"
-              class="navbar-search"
-              placeholder="Digite aqui o que você procura" />
-            <button id="btnSearch">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-            <div id="searchResult"></div>
-          </div>
+    <nav class="navbar-main">
+      <div class="container-navbar">
+        <!-- Icone de menu mobile -->
+        <i class="fa-solid fa-bars mobile"></i>
+        <!-- Logo Avanti -->
+        <img src="./assets/images/logo-avanti.svg" alt="Logo Avanti" class="logo-avanti" />
 
-          <!-- Icone de carrinho -->
-          <div class="navbar-user">
-            <img
-              src="./assets/icons/people-icon.svg"
-              alt="Icone de usuário"
-              class="people-icon" />
-            <p class="text-user">Olá,<br />Nome cliente!</p>
-            <div class="container-cart">
-              <img
-                src="./assets/icons/carrinho-icon.svg"
-                alt="Icone de carrinho" />
-              <span class="cart-badge">2</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Container mobile da barra de buscar -->
-        <div class="container-navbar-search">
-          <input
-            type="search"
-            class="navbar-search-mobile"
-            placeholder="Digite aqui o que você procura" />
-        </div>
-
-        <!-- Container Navbar Menu -->
-        <div class="navbar-menu">
-          <button class="dropbtn">
-            <i class="fa-solid fa-bars"></i>
-            Todas as categorias
+        <!-- barra de busca -->
+        <div class="search-container">
+          <input type="search" class="navbar-search" placeholder="Digite aqui o que você procura" />
+          <button id="btnSearch">
+            <i class="fa-solid fa-magnifying-glass"></i>
           </button>
-          <div
-            id="dropdownAllCategories"
-            class="dropdown-content">
-            <div class="dropdown-main-div">
-              <div class="dropdown-departamento-main">
-                <div class="dropdown-departamento-div">
-                  <a href="#">
-                    Departamento<i class="fas fa-angle-right"></i
-                  ></a>
-                  <a href="#">
-                    Departamento<i class="fas fa-angle-right"></i
-                  ></a>
-                  <a href="#">
-                    Departamento<i class="fas fa-angle-right"></i
-                  ></a>
-                  <a href="#">
-                    Departamento<i class="fas fa-angle-right"></i
-                  ></a>
-                  <a href="#">
-                    Departamento<i class="fas fa-angle-right"></i
-                  ></a>
-                  <a href="#">
-                    Departamento<i class="fas fa-angle-right"></i
-                  ></a>
-                  <a href="#">
-                    Departamento<i class="fas fa-angle-right"></i
-                  ></a>
-                  <a href="#">
-                    Departamento<i class="fas fa-angle-right"></i
-                  ></a>
-                  <a href="#">
-                    Departamento<i class="fas fa-angle-right"></i
-                  ></a>
-                  <a href="#">
-                    Departamento<i class="fas fa-angle-right"></i
-                  ></a>
-                  <a href="#">
-                    Departamento<i class="fas fa-angle-right"></i
-                  ></a>
-                  <a href="#">
-                    Departamento<i class="fas fa-angle-right"></i
-                  ></a>
-                  <a href="#">
-                    Departamento<i class="fas fa-angle-right"></i
-                  ></a>
-                  <a href="#">
-                    Departamento<i class="fas fa-angle-right"></i
-                  ></a>
-                  <a href="#">
-                    Departamento<i class="fas fa-angle-right"></i
-                  ></a>
-                  <a href="#">
-                    Departamento<i class="fas fa-angle-right"></i
-                  ></a>
-                  <a href="#">
-                    Departamento<i class="fas fa-angle-right"></i
-                  ></a>
-                  <a href="#">
-                    Departamento<i class="fas fa-angle-right"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="dropdown-categorias-main">
-                <div class="dropdown-categorias-div">
-                  <a href="#"> Categoria</a>
-                  <a href="#"> Categoria</a>
-                  <a href="#"> Categoria</a>
-                  <a href="#"> Categoria</a>
-                  <a href="#"> Categoria</a>
-                  <a href="#"> Categoria</a>
-                  <a href="#"> Categoria</a>
-                  <a href="#"> Categoria</a>
-                </div>
-                <div class="dropdown-categorias-div">
-                  <a href="#"> Categoria</a>
-                  <a href="#"> Categoria</a>
-                  <a href="#"> Categoria</a>
-                  <a href="#"> Categoria</a>
-                  <a href="#"> Categoria</a>
-                  <a href="#"> Categoria</a>
-                  <a href="#"> Categoria</a>
-                  <a href="#"> Categoria</a>
-                </div>
-                <div class="dropdown-categorias-div">
-                  <a href="#"> Categoria</a>
-                  <a href="#"> Categoria</a>
-                  <a href="#"> Categoria</a>
-                  <a href="#"> Categoria</a>
-                  <a href="#"> Categoria</a>
-                  <a href="#"> Categoria</a>
-                  <a href="#"> Categoria</a>
-                  <a href="#"> Categoria</a>
-                </div>
-              </div>
+          <div id="searchResult"></div>
+        </div>
 
-              <!-- Card 'Confira os produtos' -->
-              <div class="card-produtos">
-                <div class="card-produtos-title">
-                  <span class="title-one">Confira os Produtos</span>
-                  <span class="title-two">Que acabaram De chegar</span>
-                </div>
-                <button
-                  type="button"
-                  class="card-produtos-button">
-                  <span class="card-produtos-button-text">Ver todos</span>
-                </button>
+        <!-- Icone de carrinho -->
+        <div class="navbar-user">
+          <img src="./assets/icons/people-icon.svg" alt="Icone de usuário" class="people-icon" />
+          <p class="text-user">Olá,<br />Nome cliente!</p>
+          <div class="container-cart">
+            <img src="./assets/icons/carrinho-icon.svg" alt="Icone de carrinho" />
+            <span class="cart-badge">2</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Container mobile da barra de buscar -->
+      <div class="container-navbar-search">
+        <input type="search" class="navbar-search-mobile" placeholder="Digite aqui o que você procura" />
+      </div>
+
+      <!-- Container Navbar Menu -->
+      <div class="navbar-menu">
+        <button class="dropbtn">
+          <i class="fa-solid fa-bars"></i>
+          Todas as categorias
+        </button>
+        <div id="dropdownAllCategories" class="dropdown-content">
+          <div class="dropdown-main-div">
+            <div class="dropdown-departamento-main">
+              <div class="dropdown-departamento-div">
+                <a href="#">
+                  Departamento<i class="fas fa-angle-right"></i></a>
+                <a href="#">
+                  Departamento<i class="fas fa-angle-right"></i></a>
+                <a href="#">
+                  Departamento<i class="fas fa-angle-right"></i></a>
+                <a href="#">
+                  Departamento<i class="fas fa-angle-right"></i></a>
+                <a href="#">
+                  Departamento<i class="fas fa-angle-right"></i></a>
+                <a href="#">
+                  Departamento<i class="fas fa-angle-right"></i></a>
+                <a href="#">
+                  Departamento<i class="fas fa-angle-right"></i></a>
+                <a href="#">
+                  Departamento<i class="fas fa-angle-right"></i></a>
+                <a href="#">
+                  Departamento<i class="fas fa-angle-right"></i></a>
+                <a href="#">
+                  Departamento<i class="fas fa-angle-right"></i></a>
+                <a href="#">
+                  Departamento<i class="fas fa-angle-right"></i></a>
+                <a href="#">
+                  Departamento<i class="fas fa-angle-right"></i></a>
+                <a href="#">
+                  Departamento<i class="fas fa-angle-right"></i></a>
+                <a href="#">
+                  Departamento<i class="fas fa-angle-right"></i></a>
+                <a href="#">
+                  Departamento<i class="fas fa-angle-right"></i></a>
+                <a href="#">
+                  Departamento<i class="fas fa-angle-right"></i></a>
+                <a href="#">
+                  Departamento<i class="fas fa-angle-right"></i></a>
+                <a href="#">
+                  Departamento<i class="fas fa-angle-right"></i></a>
               </div>
             </div>
-          </div>
+            <div class="dropdown-categorias-main">
+              <div class="dropdown-categorias-div">
+                <a href="#"> Categoria</a>
+                <a href="#"> Categoria</a>
+                <a href="#"> Categoria</a>
+                <a href="#"> Categoria</a>
+                <a href="#"> Categoria</a>
+                <a href="#"> Categoria</a>
+                <a href="#"> Categoria</a>
+                <a href="#"> Categoria</a>
+              </div>
+              <div class="dropdown-categorias-div">
+                <a href="#"> Categoria</a>
+                <a href="#"> Categoria</a>
+                <a href="#"> Categoria</a>
+                <a href="#"> Categoria</a>
+                <a href="#"> Categoria</a>
+                <a href="#"> Categoria</a>
+                <a href="#"> Categoria</a>
+                <a href="#"> Categoria</a>
+              </div>
+              <div class="dropdown-categorias-div">
+                <a href="#"> Categoria</a>
+                <a href="#"> Categoria</a>
+                <a href="#"> Categoria</a>
+                <a href="#"> Categoria</a>
+                <a href="#"> Categoria</a>
+                <a href="#"> Categoria</a>
+                <a href="#"> Categoria</a>
+                <a href="#"> Categoria</a>
+              </div>
+            </div>
 
-          <!-- Dropdown Departamento -->
-          <button class="dropbtn-departamento">Departamento</button>
-          <div
-            id="dropCategoria"
-            class="dropdown-categoria">
-            <!-- <h3 class="departamento-title">Departamento</h3> -->
+            <!-- Card 'Confira os produtos' -->
+            <div class="card-produtos">
+              <div class="card-produtos-title">
+                <span class="title-one">Confira os Produtos</span>
+                <span class="title-two">Que acabaram De chegar</span>
+              </div>
+              <button type="button" class="card-produtos-button">
+                <span class="card-produtos-button-text">Ver todos</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dropdown Departamento -->
+        <button class="dropbtn-departamento">Departamento</button>
+        <div id="dropCategoria" class="dropdown-categoria">
+          <h3 class="departamento-title">Departamento</h3>
+          <div class="dropdown-categoria-main-div">
             <div class="dropdown-departamento-container-categoria">
               <a href="#">Categoria</a>
               <a href="#">Categoria</a>
@@ -214,1195 +162,847 @@
               <a href="#">Categoria</a>
               <a href="#">Categoria</a>
             </div>
-          </div>
-          <button class="dropbtn-departamento">Departamento</button>
-          <button class="dropbtn-departamento">Departamento</button>
-          <button class="dropbtn-departamento">Departamento</button>
-          <button class="dropbtn-departamento">Departamento</button>
-          <button class="dropbtn-departamento">Departamento</button>
-          <button class="dropbtn-departamento">Departamento</button>
-          <button class="dropbtn-departamento">Departamento</button>
-        </div>
-      </nav>
-    </header>
-
-    <main>
-      <section class="section-one">
-        <img
-          src="./assets/images/image-cadeira.jpg"
-          alt="Imagem de cadeira"
-          class="image-cadeira" />
-        <img
-          src="./assets/images/image-cadeira-mobile.jpg"
-          alt="Imagem de cadeira mobile"
-          class="image-cadeira-mobile" />
-        <div class="container-banner">
-          <h1 class="banner-title">
-            <span class="banner-title-highlight">super</span>sale
-          </h1>
-          <h3 class="banner-subtitle">Itens selecionados com até</h3>
-          <h3 class="banner-subtitle-mobile">Selected items up to</h3>
-          <h2 class="banner-discount">50%off</h2>
-        </div>
-      </section>
-
-      <!-- Seção com o Carousel -->
-      <section class="section-two">
-        <div class="container">
-          <div class="d-flex justify-content-between align-items-center">
-            <h5 class="m-0"><strong>Lançamentos</strong></h5>
-            <a
-              class="text-decoration-none link-title-carousel"
-              href="#"
-              >Ver mais</a
-            >
-          </div>
-
-          <div
-            id="carouselLancamentos"
-            class="carousel slide mt-3"
-            data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <!-- Slide 1 -->
-              <div class="carousel-item active">
-                <div class="row row-cols-1 row-cols-md-5 g-3">
-                  <!-- Card 1 -->
-                  <div class="col">
-                    <div class="card h-100">
-                      <span
-                        class="badge position-absolute m-2 text-uppercase badge-new-carousel"
-                        >Novo</span
-                      >
-                      <img
-                        src="./assets/images/img-carousel.jpg"
-                        class="card-img-top"
-                        alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
-                      <div class="card-body">
-                        <h6>
-                          Lorem ipsum dolor sit amet consectetuer adipiscing
-                          elit
-                        </h6>
-                        <small class="text-muted text-decoration-line-through"
-                          >R$ 100,00</small
-                        >
-                        <span
-                          class="badge ms-2 badge-10-carousel text-decoration-underline"
-                          >10% OFF</span
-                        >
-                        <p class="fw-bold mb-0">R$ 79,90</p>
-                        <small
-                          >Ou em até <strong>10x</strong> de
-                          <strong>R$ 7,90</strong></small
-                        >
-                      </div>
-                      <div class="card-footer text-center bg-white border-0">
-                        <button class="btn btn-primary w-100">Comprar</button>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Card 2 -->
-                  <div class="col">
-                    <div class="card h-100">
-                      <span
-                        class="badge position-absolute m-2 text-uppercase badge-new-carousel"
-                        >Novo</span
-                      >
-                      <img
-                        src="./assets/images/img-carousel.jpg"
-                        class="card-img-top"
-                        alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
-                      <div class="card-body">
-                        <h6>
-                          Lorem ipsum dolor sit amet consectetuer adipiscing
-                          elit
-                        </h6>
-                        <small class="text-muted text-decoration-line-through"
-                          >R$ 100,00</small
-                        >
-                        <span
-                          class="badge ms-2 badge-10-carousel text-decoration-underline"
-                          >10% OFF</span
-                        >
-                        <p class="fw-bold mb-0">R$ 79,90</p>
-                        <small
-                          >Ou em até <strong>10x</strong> de
-                          <strong>R$ 7,90</strong></small
-                        >
-                      </div>
-                      <div class="card-footer text-center bg-white border-0">
-                        <button class="btn btn-primary w-100">Comprar</button>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Card 3 -->
-                  <div class="col">
-                    <div class="card h-100">
-                      <span
-                        class="badge position-absolute m-2 text-uppercase badge-new-carousel"
-                        >Novo</span
-                      >
-                      <img
-                        src="./assets/images/img-carousel.jpg"
-                        class="card-img-top"
-                        alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
-                      <div class="card-body">
-                        <h6>
-                          Lorem ipsum dolor sit amet consectetuer adipiscing
-                          elit
-                        </h6>
-                        <small class="text-muted text-decoration-line-through"
-                          >R$ 100,00</small
-                        >
-                        <span
-                          class="badge ms-2 badge-10-carousel text-decoration-underline"
-                          >10% OFF</span
-                        >
-                        <p class="fw-bold mb-0">R$ 79,90</p>
-                        <small
-                          >Ou em até <strong>10x</strong> de
-                          <strong>R$ 7,90</strong></small
-                        >
-                      </div>
-                      <div class="card-footer text-center bg-white border-0">
-                        <button class="btn btn-primary w-100">Comprar</button>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Card 4 -->
-                  <div class="col">
-                    <div class="card h-100">
-                      <span
-                        class="badge position-absolute m-2 text-uppercase badge-new-carousel"
-                        >Novo</span
-                      >
-                      <img
-                        src="./assets/images/img-carousel.jpg"
-                        class="card-img-top"
-                        alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
-                      <div class="card-body">
-                        <h6>
-                          Lorem ipsum dolor sit amet consectetuer adipiscing
-                          elit
-                        </h6>
-                        <small class="text-muted text-decoration-line-through"
-                          >R$ 100,00</small
-                        >
-                        <span
-                          class="badge ms-2 badge-10-carousel text-decoration-underline"
-                          >10% OFF</span
-                        >
-                        <p class="fw-bold mb-0">R$ 79,90</p>
-                        <small
-                          >Ou em até <strong>10x</strong> de
-                          <strong>R$ 7,90</strong></small
-                        >
-                      </div>
-                      <div class="card-footer text-center bg-white border-0">
-                        <button class="btn btn-primary w-100">Comprar</button>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Card 5 -->
-                  <div class="col">
-                    <div class="card h-100">
-                      <span
-                        class="badge position-absolute m-2 text-uppercase badge-new-carousel"
-                        >Novo</span
-                      >
-                      <img
-                        src="./assets/images/img-carousel.jpg"
-                        class="card-img-top"
-                        alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
-                      <div class="card-body">
-                        <h6>
-                          Lorem ipsum dolor sit amet consectetuer adipiscing
-                          elit
-                        </h6>
-                        <small class="text-muted text-decoration-line-through"
-                          >R$ 100,00</small
-                        >
-                        <span
-                          class="badge ms-2 badge-10-carousel text-decoration-underline"
-                          >10% OFF</span
-                        >
-                        <p class="fw-bold mb-0">R$ 79,90</p>
-                        <small
-                          >Ou em até <strong>10x</strong> de
-                          <strong>R$ 7,90</strong></small
-                        >
-                      </div>
-                      <div class="card-footer text-center bg-white border-0">
-                        <button class="btn btn-primary w-100">Comprar</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <!-- Card 'Confira os produtos' -->
+            <div class="card-produtos">
+              <div class="card-produtos-title">
+                <span class="title-one">Confira os Produtos</span>
+                <span class="title-two">Que acabaram De chegar</span>
               </div>
-
-              <!-- Slide 2 -->
-              <div class="carousel-item">
-                <div class="row row-cols-1 row-cols-md-5 g-3">
-                  <!-- Cards repetidos para o segundo slide -->
-                  <!-- Card 1 -->
-                  <div class="col">
-                    <div class="card h-100">
-                      <span
-                        class="badge position-absolute m-2 text-uppercase badge-new-carousel"
-                        >Novo</span
-                      >
-                      <img
-                        src="./assets/images/img-carousel.jpg"
-                        class="card-img-top"
-                        alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
-                      <div class="card-body">
-                        <h6>
-                          Lorem ipsum dolor sit amet consectetuer adipiscing
-                          elit
-                        </h6>
-                        <small class="text-muted text-decoration-line-through"
-                          >R$ 100,00</small
-                        >
-                        <span
-                          class="badge ms-2 badge-10-carousel text-decoration-underline"
-                          >10% OFF</span
-                        >
-                        <p class="fw-bold mb-0">R$ 79,90</p>
-                        <small
-                          >Ou em até <strong>10x</strong> de
-                          <strong>R$ 7,90</strong></small
-                        >
-                      </div>
-                      <div class="card-footer text-center bg-white border-0">
-                        <button class="btn btn-primary w-100">Comprar</button>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Card 2 -->
-                  <div class="col">
-                    <div class="card h-100">
-                      <span
-                        class="badge position-absolute m-2 text-uppercase badge-new-carousel"
-                        >Novo</span
-                      >
-                      <img
-                        src="./assets/images/img-carousel.jpg"
-                        class="card-img-top"
-                        alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
-                      <div class="card-body">
-                        <h6>
-                          Lorem ipsum dolor sit amet consectetuer adipiscing
-                          elit
-                        </h6>
-                        <small class="text-muted text-decoration-line-through"
-                          >R$ 100,00</small
-                        >
-                        <span
-                          class="badge ms-2 badge-10-carousel text-decoration-underline"
-                          >10% OFF</span
-                        >
-                        <p class="fw-bold mb-0">R$ 79,90</p>
-                        <small
-                          >Ou em até <strong>10x</strong> de
-                          <strong>R$ 7,90</strong></small
-                        >
-                      </div>
-                      <div class="card-footer text-center bg-white border-0">
-                        <button class="btn btn-primary w-100">Comprar</button>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Card 3 -->
-                  <div class="col">
-                    <div class="card h-100">
-                      <span
-                        class="badge position-absolute m-2 text-uppercase badge-new-carousel"
-                        >Novo</span
-                      >
-                      <img
-                        src="./assets/images/img-carousel.jpg"
-                        class="card-img-top"
-                        alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
-                      <div class="card-body">
-                        <h6>
-                          Lorem ipsum dolor sit amet consectetuer adipiscing
-                          elit
-                        </h6>
-                        <small class="text-muted text-decoration-line-through"
-                          >R$ 100,00</small
-                        >
-                        <span
-                          class="badge ms-2 badge-10-carousel text-decoration-underline"
-                          >10% OFF</span
-                        >
-                        <p class="fw-bold mb-0">R$ 79,90</p>
-                        <small
-                          >Ou em até <strong>10x</strong> de
-                          <strong>R$ 7,90</strong></small
-                        >
-                      </div>
-                      <div class="card-footer text-center bg-white border-0">
-                        <button class="btn btn-primary w-100">Comprar</button>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Card 4 -->
-                  <div class="col">
-                    <div class="card h-100">
-                      <span
-                        class="badge position-absolute m-2 text-uppercase badge-new-carousel"
-                        >Novo</span
-                      >
-                      <img
-                        src="./assets/images/img-carousel.jpg"
-                        class="card-img-top"
-                        alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
-                      <div class="card-body">
-                        <h6>
-                          Lorem ipsum dolor sit amet consectetuer adipiscing
-                          elit
-                        </h6>
-                        <small class="text-muted text-decoration-line-through"
-                          >R$ 100,00</small
-                        >
-                        <span
-                          class="badge ms-2 badge-10-carousel text-decoration-underline"
-                          >10% OFF</span
-                        >
-                        <p class="fw-bold mb-0">R$ 79,90</p>
-                        <small
-                          >Ou em até <strong>10x</strong> de
-                          <strong>R$ 7,90</strong></small
-                        >
-                      </div>
-                      <div class="card-footer text-center bg-white border-0">
-                        <button class="btn btn-primary w-100">Comprar</button>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Card 5 -->
-                  <div class="col">
-                    <div class="card h-100">
-                      <span
-                        class="badge position-absolute m-2 text-uppercase badge-new-carousel"
-                        >Novo</span
-                      >
-                      <img
-                        src="./assets/images/img-carousel.jpg"
-                        class="card-img-top"
-                        alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
-                      <div class="card-body">
-                        <h6>
-                          Lorem ipsum dolor sit amet consectetuer adipiscing
-                          elit
-                        </h6>
-                        <small class="text-muted text-decoration-line-through"
-                          >R$ 100,00</small
-                        >
-                        <span
-                          class="badge ms-2 badge-10-carousel text-decoration-underline"
-                          >10% OFF</span
-                        >
-                        <p class="fw-bold mb-0">R$ 79,90</p>
-                        <small
-                          >Ou em até <strong>10x</strong> de
-                          <strong>R$ 7,90</strong></small
-                        >
-                      </div>
-                      <div class="card-footer text-center bg-white border-0">
-                        <button class="btn btn-primary w-100">Comprar</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Controles Carousel -->
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselLancamentos"
-              data-bs-slide="prev">
-              <i class="bi bi-arrow-left-circle icon-arrow-carousel"></i>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselLancamentos"
-              data-bs-slide="next">
-              <i class="bi bi-arrow-right-circle icon-arrow-carousel"></i>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <!-- Seção de Card -->
-      <section class="section-three">
-        <div class="container-card">
-          <div class="container-image-card">
-            <img
-              src="./assets/images/img-card-1.png"
-              alt="Imagem do card"
-              class="image-card" />
-          </div>
-          <div class="container-texts-card">
-            <h2 class="title-card">Lorem Ipsum</h2>
-            <p class="description-card">
-              Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
-              finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras
-              efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
-              lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas
-              fringilla porttitor tortor eget lacinia. Donec sollicitudin
-              euismod orci, auctor fringilla magna consequat interdum. Fusce
-              sagittis elit a libero commodo egestas efficitur id augue.
-            </p>
-            <p class="description-card">
-              Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
-              finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras
-              efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
-              lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas
-              fringilla porttitor tortor eget lacinia. Donec sollicitudin
-              euismod orci, auctor fringilla magna consequat interdum. Fusce
-              sagittis elit a libero commodo egestas efficitur id augue.
-            </p>
-          </div>
-        </div>
-        <!-- Seção de Card 1 - Mobile -->
-        <div class="container-card-mobile">
-          <div class="container-image-card-mobile">
-            <img
-              src="./assets/images/img-card-1-mobile.jpg"
-              alt="Imagem do card" />
-          </div>
-          <div class="container-texts-card-mobile">
-            <h2 class="title-card-mobile">Lorem Ipsum</h2>
-            <p class="description-card-mobile">
-              Aenean massa. Cum sociis natoque penatibus et magnis dis
-              parturient montes, nascetur ridiculus mus. Donec quam felis,
-              ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
-              massa quis enim.
-              <br />
-              <br />
-              Cras dignissim est et pellentesque tincidunt. Praesent bibendum
-              quis velit a aliquam. Ut vestibulum turpis eget mi iaculis
-              ullamcorper. Curabitur nec metus sed tortor sollicitudin porta nec
-              eu enim. Ut fermentum scelerisque tortor mollis volutpat. Mauris
-              iaculis magna nisl, vel porttitor augue placerat et.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Seção de Card 2 -->
-      <section class="section-four">
-        <div class="container-card-2">
-          <div class="container-texts-card-2">
-            <h2 class="title-card-2">Lorem Ipsum</h2>
-            <div class="container-circle-description">
-              <div class="ellipse">
-                <img
-                  src="./assets/icons/icon-map-pin.svg"
-                  alt="Icone de localização"
-                  class="icon-map-pin" />
-              </div>
-              <p class="description-card-2">
-                Aenean massa. Cum sociis natoque penatibus et magnis dis
-                parturient montes, nascetur ridiculus mus. Donec quam felis,
-                ultricies nec, pellentesque eu, pretium quis, sem.
-              </p>
-            </div>
-            <div class="container-circle-description">
-              <div class="ellipse">
-                <img
-                  src="./assets/icons/icon-map-pin.svg"
-                  alt="Icone de localização"
-                  class="icon-map-pin" />
-              </div>
-              <p class="description-card-2">
-                Aenean massa. Cum sociis natoque penatibus et magnis dis
-                parturient montes, nascetur ridiculus mus. Donec quam felis,
-                ultricies nec, pellentesque eu, pretium quis, sem.
-              </p>
-            </div>
-            <div class="container-circle-description">
-              <div class="ellipse">
-                <img
-                  src="./assets/icons/icon-map-pin.svg"
-                  alt="Icone de localização"
-                  class="icon-map-pin" />
-              </div>
-              <p class="description-card-2">
-                Aenean massa. Cum sociis natoque penatibus et magnis dis
-                parturient montes, nascetur ridiculus mus. Donec quam felis,
-                ultricies nec, pellentesque eu, pretium quis, sem.
-              </p>
+              <button type="button" class="card-produtos-button">
+                <span class="card-produtos-button-text">Ver todos</span>
+              </button>
             </div>
           </div>
-          <img
-            src="./assets/images/img-card-2.jpg"
-            alt="Imagem do card"
-            class="image-card-2" />
         </div>
-      </section>
+        <button class="dropbtn-departamento">Departamento</button>
+        <button class="dropbtn-departamento">Departamento</button>
+        <button class="dropbtn-departamento">Departamento</button>
+        <button class="dropbtn-departamento">Departamento</button>
+        <button class="dropbtn-departamento">Departamento</button>
+        <button class="dropbtn-departamento">Departamento</button>
+        <button class="dropbtn-departamento">Departamento</button>
+      </div>
+    </nav>
+  </header>
 
-      <!-- Seção de Card 3 -->
-      <section class="section-five">
-        <div class="container-card">
-          <div class="container-image-card">
-            <img
-              src="./assets/images/img-card-1.png"
-              alt="Imagem do card"
-              class="image-card" />
-          </div>
-          <div class="container-texts-card">
-            <h2 class="title-card">Lorem Ipsum</h2>
-            <p class="description-card">
-              Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
-              finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras
-              efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
-              lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas
-              fringilla porttitor tortor eget lacinia. Donec sollicitudin
-              euismod orci, auctor fringilla magna consequat interdum. Fusce
-              sagittis elit a libero commodo egestas efficitur id augue.
-            </p>
-            <p class="description-card">
-              Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
-              finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras
-              efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
-              lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas
-              fringilla porttitor tortor eget lacinia. Donec sollicitudin
-              euismod orci, auctor fringilla magna consequat interdum. Fusce
-              sagittis elit a libero commodo egestas efficitur id augue.
-            </p>
-          </div>
-        </div>
-        <!-- Seção de Card 2 - Mobile -->
-        <div class="container-card-mobile">
-          <div class="container-image-card-mobile">
-            <img
-              src="./assets/images/img-card-1-mobile.jpg"
-              alt="Imagem do card" />
-          </div>
-          <div class="container-texts-card-mobile">
-            <h2 class="title-card-mobile">Lorem Ipsum</h2>
-            <p class="description-card-mobile">
-              Aenean massa. Cum sociis natoque penatibus et magnis dis
-              parturient montes, nascetur ridiculus mus. Donec quam felis,
-              ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
-              massa quis enim.
-              <br />
-              <br />
-              Cras dignissim est et pellentesque tincidunt. Praesent bibendum
-              quis velit a aliquam. Ut vestibulum turpis eget mi iaculis
-              ullamcorper. Curabitur nec metus sed tortor sollicitudin porta nec
-              eu enim. Ut fermentum scelerisque tortor mollis volutpat. Mauris
-              iaculis magna nisl, vel porttitor augue placerat et.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Seção Carousel 2 -->
-      <section class="section-six">
-        <div class="container mt-4">
-          <div class="d-flex justify-content-between align-items-center">
-            <h5 class="m-0"><strong>Lançamentos</strong></h5>
-            <a
-              class="text-decoration-none link-title-carousel"
-              href="#"
-              >Ver mais</a
-            >
-          </div>
-
-          <div
-            id="carouselLancamentos2"
-            class="carousel slide mt-3"
-            data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <!-- Slide 1 -->
-              <div class="carousel-item active">
-                <div class="row row-cols-1 row-cols-md-5 g-3">
-                  <!-- Card 1 -->
-                  <div class="col">
-                    <div class="card h-100">
-                      <span
-                        class="badge position-absolute m-2 text-uppercase badge-new-carousel"
-                        >Novo</span
-                      >
-                      <img
-                        src="./assets/images/img-carousel.jpg"
-                        class="card-img-top"
-                        alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
-                      <div class="card-body">
-                        <h6>
-                          Lorem ipsum dolor sit amet consectetuer adipiscing
-                          elit
-                        </h6>
-                        <small class="text-muted text-decoration-line-through"
-                          >R$ 100,00</small
-                        >
-                        <span
-                          class="badge ms-2 badge-10-carousel text-decoration-underline"
-                          >10% OFF</span
-                        >
-                        <p class="fw-bold mb-0">R$ 79,90</p>
-                        <small
-                          >Ou em até <strong>10x</strong> de
-                          <strong>R$ 7,90</strong></small
-                        >
-                      </div>
-                      <div class="card-footer text-center bg-white border-0">
-                        <button class="btn btn-primary w-100">Comprar</button>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Card 2 -->
-                  <div class="col">
-                    <div class="card h-100">
-                      <span
-                        class="badge position-absolute m-2 text-uppercase badge-new-carousel"
-                        >Novo</span
-                      >
-                      <img
-                        src="./assets/images/img-carousel.jpg"
-                        class="card-img-top"
-                        alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
-                      <div class="card-body">
-                        <h6>
-                          Lorem ipsum dolor sit amet consectetuer adipiscing
-                          elit
-                        </h6>
-                        <small class="text-muted text-decoration-line-through"
-                          >R$ 100,00</small
-                        >
-                        <span
-                          class="badge ms-2 badge-10-carousel text-decoration-underline"
-                          >10% OFF</span
-                        >
-                        <p class="fw-bold mb-0">R$ 79,90</p>
-                        <small
-                          >Ou em até <strong>10x</strong> de
-                          <strong>R$ 7,90</strong></small
-                        >
-                      </div>
-                      <div class="card-footer text-center bg-white border-0">
-                        <button class="btn btn-primary w-100">Comprar</button>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Card 3 -->
-                  <div class="col">
-                    <div class="card h-100">
-                      <span
-                        class="badge position-absolute m-2 text-uppercase badge-new-carousel"
-                        >Novo</span
-                      >
-                      <img
-                        src="./assets/images/img-carousel.jpg"
-                        class="card-img-top"
-                        alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
-                      <div class="card-body">
-                        <h6>
-                          Lorem ipsum dolor sit amet consectetuer adipiscing
-                          elit
-                        </h6>
-                        <small class="text-muted text-decoration-line-through"
-                          >R$ 100,00</small
-                        >
-                        <span
-                          class="badge ms-2 badge-10-carousel text-decoration-underline"
-                          >10% OFF</span
-                        >
-                        <p class="fw-bold mb-0">R$ 79,90</p>
-                        <small
-                          >Ou em até <strong>10x</strong> de
-                          <strong>R$ 7,90</strong></small
-                        >
-                      </div>
-                      <div class="card-footer text-center bg-white border-0">
-                        <button class="btn btn-primary w-100">Comprar</button>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Card 4 -->
-                  <div class="col">
-                    <div class="card h-100">
-                      <span
-                        class="badge position-absolute m-2 text-uppercase badge-new-carousel"
-                        >Novo</span
-                      >
-                      <img
-                        src="./assets/images/img-carousel.jpg"
-                        class="card-img-top"
-                        alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
-                      <div class="card-body">
-                        <h6>
-                          Lorem ipsum dolor sit amet consectetuer adipiscing
-                          elit
-                        </h6>
-                        <small class="text-muted text-decoration-line-through"
-                          >R$ 100,00</small
-                        >
-                        <span
-                          class="badge ms-2 badge-10-carousel text-decoration-underline"
-                          >10% OFF</span
-                        >
-                        <p class="fw-bold mb-0">R$ 79,90</p>
-                        <small
-                          >Ou em até <strong>10x</strong> de
-                          <strong>R$ 7,90</strong></small
-                        >
-                      </div>
-                      <div class="card-footer text-center bg-white border-0">
-                        <button class="btn btn-primary w-100">Comprar</button>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Card 5 -->
-                  <div class="col">
-                    <div class="card h-100">
-                      <span
-                        class="badge position-absolute m-2 text-uppercase badge-new-carousel"
-                        >Novo</span
-                      >
-                      <img
-                        src="./assets/images/img-carousel.jpg"
-                        class="card-img-top"
-                        alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
-                      <div class="card-body">
-                        <h6>
-                          Lorem ipsum dolor sit amet consectetuer adipiscing
-                          elit
-                        </h6>
-                        <small class="text-muted text-decoration-line-through"
-                          >R$ 100,00</small
-                        >
-                        <span
-                          class="badge ms-2 badge-10-carousel text-decoration-underline"
-                          >10% OFF</span
-                        >
-                        <p class="fw-bold mb-0">R$ 79,90</p>
-                        <small
-                          >Ou em até <strong>10x</strong> de
-                          <strong>R$ 7,90</strong></small
-                        >
-                      </div>
-                      <div class="card-footer text-center bg-white border-0">
-                        <button class="btn btn-primary w-100">Comprar</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 2 -->
-              <div class="carousel-item">
-                <div class="row row-cols-1 row-cols-md-5 g-3">
-                  <!-- Cards repetidos para o segundo slide -->
-                  <!-- Card 1 -->
-                  <div class="col">
-                    <div class="card h-100">
-                      <span
-                        class="badge position-absolute m-2 text-uppercase badge-new-carousel"
-                        >Novo</span
-                      >
-                      <img
-                        src="./assets/images/img-carousel.jpg"
-                        class="card-img-top"
-                        alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
-                      <div class="card-body">
-                        <h6>
-                          Lorem ipsum dolor sit amet consectetuer adipiscing
-                          elit
-                        </h6>
-                        <small class="text-muted text-decoration-line-through"
-                          >R$ 100,00</small
-                        >
-                        <span
-                          class="badge ms-2 badge-10-carousel text-decoration-underline"
-                          >10% OFF</span
-                        >
-                        <p class="fw-bold mb-0">R$ 79,90</p>
-                        <small
-                          >Ou em até <strong>10x</strong> de
-                          <strong>R$ 7,90</strong></small
-                        >
-                      </div>
-                      <div class="card-footer text-center bg-white border-0">
-                        <button class="btn btn-primary w-100">Comprar</button>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Card 2 -->
-                  <div class="col">
-                    <div class="card h-100">
-                      <span
-                        class="badge position-absolute m-2 text-uppercase badge-new-carousel"
-                        >Novo</span
-                      >
-                      <img
-                        src="./assets/images/img-carousel.jpg"
-                        class="card-img-top"
-                        alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
-                      <div class="card-body">
-                        <h6>
-                          Lorem ipsum dolor sit amet consectetuer adipiscing
-                          elit
-                        </h6>
-                        <small class="text-muted text-decoration-line-through"
-                          >R$ 100,00</small
-                        >
-                        <span
-                          class="badge ms-2 badge-10-carousel text-decoration-underline"
-                          >10% OFF</span
-                        >
-                        <p class="fw-bold mb-0">R$ 79,90</p>
-                        <small
-                          >Ou em até <strong>10x</strong> de
-                          <strong>R$ 7,90</strong></small
-                        >
-                      </div>
-                      <div class="card-footer text-center bg-white border-0">
-                        <button class="btn btn-primary w-100">Comprar</button>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Card 3 -->
-                  <div class="col">
-                    <div class="card h-100">
-                      <span
-                        class="badge position-absolute m-2 text-uppercase badge-new-carousel"
-                        >Novo</span
-                      >
-                      <img
-                        src="./assets/images/img-carousel.jpg"
-                        class="card-img-top"
-                        alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
-                      <div class="card-body">
-                        <h6>
-                          Lorem ipsum dolor sit amet consectetuer adipiscing
-                          elit
-                        </h6>
-                        <small class="text-muted text-decoration-line-through"
-                          >R$ 100,00</small
-                        >
-                        <span
-                          class="badge ms-2 badge-10-carousel text-decoration-underline"
-                          >10% OFF</span
-                        >
-                        <p class="fw-bold mb-0">R$ 79,90</p>
-                        <small
-                          >Ou em até <strong>10x</strong> de
-                          <strong>R$ 7,90</strong></small
-                        >
-                      </div>
-                      <div class="card-footer text-center bg-white border-0">
-                        <button class="btn btn-primary w-100">Comprar</button>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Card 4 -->
-                  <div class="col">
-                    <div class="card h-100">
-                      <span
-                        class="badge position-absolute m-2 text-uppercase badge-new-carousel"
-                        >Novo</span
-                      >
-                      <img
-                        src="./assets/images/img-carousel.jpg"
-                        class="card-img-top"
-                        alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
-                      <div class="card-body">
-                        <h6>
-                          Lorem ipsum dolor sit amet consectetuer adipiscing
-                          elit
-                        </h6>
-                        <small class="text-muted text-decoration-line-through"
-                          >R$ 100,00</small
-                        >
-                        <span
-                          class="badge ms-2 badge-10-carousel text-decoration-underline"
-                          >10% OFF</span
-                        >
-                        <p class="fw-bold mb-0">R$ 79,90</p>
-                        <small
-                          >Ou em até <strong>10x</strong> de
-                          <strong>R$ 7,90</strong></small
-                        >
-                      </div>
-                      <div class="card-footer text-center bg-white border-0">
-                        <button class="btn btn-primary w-100">Comprar</button>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Card 5 -->
-                  <div class="col">
-                    <div class="card h-100">
-                      <span
-                        class="badge position-absolute m-2 text-uppercase badge-new-carousel"
-                        >Novo</span
-                      >
-                      <img
-                        src="./assets/images/img-carousel.jpg"
-                        class="card-img-top"
-                        alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
-                      <div class="card-body">
-                        <h6>
-                          Lorem ipsum dolor sit amet consectetuer adipiscing
-                          elit
-                        </h6>
-                        <small class="text-muted text-decoration-line-through"
-                          >R$ 100,00</small
-                        >
-                        <span
-                          class="badge ms-2 badge-10-carousel text-decoration-underline"
-                          >10% OFF</span
-                        >
-                        <p class="fw-bold mb-0">R$ 79,90</p>
-                        <small
-                          >Ou em até <strong>10x</strong> de
-                          <strong>R$ 7,90</strong></small
-                        >
-                      </div>
-                      <div class="card-footer text-center bg-white border-0">
-                        <button class="btn btn-primary w-100">Comprar</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Controles Carousel -->
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselLancamentos2"
-              data-bs-slide="prev">
-              <i class="bi bi-arrow-left-circle icon-arrow-carousel"></i>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselLancamentos2"
-              data-bs-slide="next">
-              <i class="bi bi-arrow-right-circle icon-arrow-carousel"></i>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <!-- Seção banner -->
-      <section class="section-seven">
-        <div class="background-text-banner">
-          <p class="text-banner">
-            Entre em contato conosco e verifique a disponibilidade para sua
-            região!
-          </p>
-        </div>
-      </section>
-
-      <!-- Seção Newsletter -->
-      <section class="section-eight">
-        <!-- <div class="container-newsletter"> -->
-        <h1 class="title-newsletter">
-          Cadastre-se na nossa <span class="span-newsletter">newsletter</span>
+  <main>
+    <section class="section-one">
+      <img src="./assets/images/image-cadeira.jpg" alt="Imagem de cadeira" class="image-cadeira" />
+      <img src="./assets/images/image-cadeira-mobile.jpg" alt="Imagem de cadeira mobile" class="image-cadeira-mobile" />
+      <div class="container-banner">
+        <h1 class="banner-title">
+          <span class="banner-title-highlight">super</span>sale
         </h1>
-        <!-- </div> -->
-        <div class="container-cadastro">
-          <input
-            type="text"
-            class="input-newsletter-name"
-            placeholder="Digite seu nome" />
-          <input
-            type="email"
-            class="input-newsletter-email"
-            placeholder="Digite seu e-mail" />
-          <div class="container-newsletter-checkbox">
-            <input
-              type="checkbox"
-              id="checkbox-newsletter"
-              class="input-newsletter-checkbox" />
-            <label
-              for="checkbox-newsletter"
-              class="label-newsletter-checkbox">
-              Estou de acordo com a
-              <span class="span-newsletter-checkbox"
-                >Política de Privacidade</span
-              >
-            </label>
+        <h3 class="banner-subtitle">Itens selecionados com até</h3>
+        <h3 class="banner-subtitle-mobile">Selected items up to</h3>
+        <h2 class="banner-discount">50%off</h2>
+      </div>
+    </section>
+
+    <!-- Seção com o Carousel -->
+    <section class="section-two">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <h5 class="m-0"><strong>Lançamentos</strong></h5>
+          <a class="text-decoration-none link-title-carousel" href="#">Ver mais</a>
+        </div>
+
+        <div id="carouselLancamentos" class="carousel slide mt-3" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row row-cols-1 row-cols-md-5 g-3">
+                <!-- Card 1 -->
+                <div class="col">
+                  <div class="card h-100">
+                    <span class="badge position-absolute m-2 text-uppercase badge-new-carousel">Novo</span>
+                    <img src="./assets/images/img-carousel.jpg" class="card-img-top"
+                      alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
+                    <div class="card-body">
+                      <h6>
+                        Lorem ipsum dolor sit amet consectetuer adipiscing
+                        elit
+                      </h6>
+                      <small class="text-muted text-decoration-line-through">R$ 100,00</small>
+                      <span class="badge ms-2 badge-10-carousel text-decoration-underline">10% OFF</span>
+                      <p class="fw-bold mb-0">R$ 79,90</p>
+                      <small>Ou em até <strong>10x</strong> de
+                        <strong>R$ 7,90</strong></small>
+                    </div>
+                    <div class="card-footer text-center bg-white border-0">
+                      <button class="btn btn-primary w-100">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col">
+                  <div class="card h-100">
+                    <span class="badge position-absolute m-2 text-uppercase badge-new-carousel">Novo</span>
+                    <img src="./assets/images/img-carousel.jpg" class="card-img-top"
+                      alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
+                    <div class="card-body">
+                      <h6>
+                        Lorem ipsum dolor sit amet consectetuer adipiscing
+                        elit
+                      </h6>
+                      <small class="text-muted text-decoration-line-through">R$ 100,00</small>
+                      <span class="badge ms-2 badge-10-carousel text-decoration-underline">10% OFF</span>
+                      <p class="fw-bold mb-0">R$ 79,90</p>
+                      <small>Ou em até <strong>10x</strong> de
+                        <strong>R$ 7,90</strong></small>
+                    </div>
+                    <div class="card-footer text-center bg-white border-0">
+                      <button class="btn btn-primary w-100">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col">
+                  <div class="card h-100">
+                    <span class="badge position-absolute m-2 text-uppercase badge-new-carousel">Novo</span>
+                    <img src="./assets/images/img-carousel.jpg" class="card-img-top"
+                      alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
+                    <div class="card-body">
+                      <h6>
+                        Lorem ipsum dolor sit amet consectetuer adipiscing
+                        elit
+                      </h6>
+                      <small class="text-muted text-decoration-line-through">R$ 100,00</small>
+                      <span class="badge ms-2 badge-10-carousel text-decoration-underline">10% OFF</span>
+                      <p class="fw-bold mb-0">R$ 79,90</p>
+                      <small>Ou em até <strong>10x</strong> de
+                        <strong>R$ 7,90</strong></small>
+                    </div>
+                    <div class="card-footer text-center bg-white border-0">
+                      <button class="btn btn-primary w-100">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col">
+                  <div class="card h-100">
+                    <span class="badge position-absolute m-2 text-uppercase badge-new-carousel">Novo</span>
+                    <img src="./assets/images/img-carousel.jpg" class="card-img-top"
+                      alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
+                    <div class="card-body">
+                      <h6>
+                        Lorem ipsum dolor sit amet consectetuer adipiscing
+                        elit
+                      </h6>
+                      <small class="text-muted text-decoration-line-through">R$ 100,00</small>
+                      <span class="badge ms-2 badge-10-carousel text-decoration-underline">10% OFF</span>
+                      <p class="fw-bold mb-0">R$ 79,90</p>
+                      <small>Ou em até <strong>10x</strong> de
+                        <strong>R$ 7,90</strong></small>
+                    </div>
+                    <div class="card-footer text-center bg-white border-0">
+                      <button class="btn btn-primary w-100">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="col">
+                  <div class="card h-100">
+                    <span class="badge position-absolute m-2 text-uppercase badge-new-carousel">Novo</span>
+                    <img src="./assets/images/img-carousel.jpg" class="card-img-top"
+                      alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
+                    <div class="card-body">
+                      <h6>
+                        Lorem ipsum dolor sit amet consectetuer adipiscing
+                        elit
+                      </h6>
+                      <small class="text-muted text-decoration-line-through">R$ 100,00</small>
+                      <span class="badge ms-2 badge-10-carousel text-decoration-underline">10% OFF</span>
+                      <p class="fw-bold mb-0">R$ 79,90</p>
+                      <small>Ou em até <strong>10x</strong> de
+                        <strong>R$ 7,90</strong></small>
+                    </div>
+                    <div class="card-footer text-center bg-white border-0">
+                      <button class="btn btn-primary w-100">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row row-cols-1 row-cols-md-5 g-3">
+                <!-- Cards repetidos para o segundo slide -->
+                <!-- Card 1 -->
+                <div class="col">
+                  <div class="card h-100">
+                    <span class="badge position-absolute m-2 text-uppercase badge-new-carousel">Novo</span>
+                    <img src="./assets/images/img-carousel.jpg" class="card-img-top"
+                      alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
+                    <div class="card-body">
+                      <h6>
+                        Lorem ipsum dolor sit amet consectetuer adipiscing
+                        elit
+                      </h6>
+                      <small class="text-muted text-decoration-line-through">R$ 100,00</small>
+                      <span class="badge ms-2 badge-10-carousel text-decoration-underline">10% OFF</span>
+                      <p class="fw-bold mb-0">R$ 79,90</p>
+                      <small>Ou em até <strong>10x</strong> de
+                        <strong>R$ 7,90</strong></small>
+                    </div>
+                    <div class="card-footer text-center bg-white border-0">
+                      <button class="btn btn-primary w-100">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col">
+                  <div class="card h-100">
+                    <span class="badge position-absolute m-2 text-uppercase badge-new-carousel">Novo</span>
+                    <img src="./assets/images/img-carousel.jpg" class="card-img-top"
+                      alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
+                    <div class="card-body">
+                      <h6>
+                        Lorem ipsum dolor sit amet consectetuer adipiscing
+                        elit
+                      </h6>
+                      <small class="text-muted text-decoration-line-through">R$ 100,00</small>
+                      <span class="badge ms-2 badge-10-carousel text-decoration-underline">10% OFF</span>
+                      <p class="fw-bold mb-0">R$ 79,90</p>
+                      <small>Ou em até <strong>10x</strong> de
+                        <strong>R$ 7,90</strong></small>
+                    </div>
+                    <div class="card-footer text-center bg-white border-0">
+                      <button class="btn btn-primary w-100">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col">
+                  <div class="card h-100">
+                    <span class="badge position-absolute m-2 text-uppercase badge-new-carousel">Novo</span>
+                    <img src="./assets/images/img-carousel.jpg" class="card-img-top"
+                      alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
+                    <div class="card-body">
+                      <h6>
+                        Lorem ipsum dolor sit amet consectetuer adipiscing
+                        elit
+                      </h6>
+                      <small class="text-muted text-decoration-line-through">R$ 100,00</small>
+                      <span class="badge ms-2 badge-10-carousel text-decoration-underline">10% OFF</span>
+                      <p class="fw-bold mb-0">R$ 79,90</p>
+                      <small>Ou em até <strong>10x</strong> de
+                        <strong>R$ 7,90</strong></small>
+                    </div>
+                    <div class="card-footer text-center bg-white border-0">
+                      <button class="btn btn-primary w-100">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col">
+                  <div class="card h-100">
+                    <span class="badge position-absolute m-2 text-uppercase badge-new-carousel">Novo</span>
+                    <img src="./assets/images/img-carousel.jpg" class="card-img-top"
+                      alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
+                    <div class="card-body">
+                      <h6>
+                        Lorem ipsum dolor sit amet consectetuer adipiscing
+                        elit
+                      </h6>
+                      <small class="text-muted text-decoration-line-through">R$ 100,00</small>
+                      <span class="badge ms-2 badge-10-carousel text-decoration-underline">10% OFF</span>
+                      <p class="fw-bold mb-0">R$ 79,90</p>
+                      <small>Ou em até <strong>10x</strong> de
+                        <strong>R$ 7,90</strong></small>
+                    </div>
+                    <div class="card-footer text-center bg-white border-0">
+                      <button class="btn btn-primary w-100">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="col">
+                  <div class="card h-100">
+                    <span class="badge position-absolute m-2 text-uppercase badge-new-carousel">Novo</span>
+                    <img src="./assets/images/img-carousel.jpg" class="card-img-top"
+                      alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
+                    <div class="card-body">
+                      <h6>
+                        Lorem ipsum dolor sit amet consectetuer adipiscing
+                        elit
+                      </h6>
+                      <small class="text-muted text-decoration-line-through">R$ 100,00</small>
+                      <span class="badge ms-2 badge-10-carousel text-decoration-underline">10% OFF</span>
+                      <p class="fw-bold mb-0">R$ 79,90</p>
+                      <small>Ou em até <strong>10x</strong> de
+                        <strong>R$ 7,90</strong></small>
+                    </div>
+                    <div class="card-footer text-center bg-white border-0">
+                      <button class="btn btn-primary w-100">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <button
-            type="button"
-            class="button-newsletter">
-            <span class="button-newsletter-text">Cadastrar</span>
+
+          <!-- Controles Carousel -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselLancamentos"
+            data-bs-slide="prev">
+            <i class="bi bi-arrow-left-circle icon-arrow-carousel"></i>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselLancamentos"
+            data-bs-slide="next">
+            <i class="bi bi-arrow-right-circle icon-arrow-carousel"></i>
           </button>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
-    <footer>
-      <div class="container-footer">
-        <div class="container-menu-footer">
-          <div class="container-menu-footer-logo-social">
-            <img
-              src="./assets/images/logo-avanti.svg"
-              alt="Logo Avanti"
-              class="logo-avanti-footer" />
-            <div class="container-social-media">
-              <a
-                href="..."
-                class="link-social-media"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a
-                href="..."
-                class="link-social-media"
-                ><i class="fa-brands fa-facebook-f"></i
-              ></a>
-              <a
-                href="..."
-                class="link-social-media"
-                ><img
-                  src="./assets/icons/youtube-icon.svg"
-                  alt="Icone do youtube" />
-              </a>
-              <a
-                href="..."
-                class="link-social-media"
-                ><i class="fa-brands fa-tiktok"></i
-              ></a>
+    <!-- Seção de Card -->
+    <section class="section-three">
+      <div class="container-card">
+        <div class="container-image-card">
+          <img src="./assets/images/img-card-1.png" alt="Imagem do card" class="image-card" />
+        </div>
+        <div class="container-texts-card">
+          <h2 class="title-card">Lorem Ipsum</h2>
+          <p class="description-card">
+            Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+            finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras
+            efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
+            lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas
+            fringilla porttitor tortor eget lacinia. Donec sollicitudin
+            euismod orci, auctor fringilla magna consequat interdum. Fusce
+            sagittis elit a libero commodo egestas efficitur id augue.
+          </p>
+          <p class="description-card">
+            Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+            finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras
+            efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
+            lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas
+            fringilla porttitor tortor eget lacinia. Donec sollicitudin
+            euismod orci, auctor fringilla magna consequat interdum. Fusce
+            sagittis elit a libero commodo egestas efficitur id augue.
+          </p>
+        </div>
+      </div>
+      <!-- Seção de Card 1 - Mobile -->
+      <div class="container-card-mobile">
+        <div class="container-image-card-mobile">
+          <img src="./assets/images/img-card-1-mobile.jpg" alt="Imagem do card" />
+        </div>
+        <div class="container-texts-card-mobile">
+          <h2 class="title-card-mobile">Lorem Ipsum</h2>
+          <p class="description-card-mobile">
+            Aenean massa. Cum sociis natoque penatibus et magnis dis
+            parturient montes, nascetur ridiculus mus. Donec quam felis,
+            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+            massa quis enim.
+            <br />
+            <br />
+            Cras dignissim est et pellentesque tincidunt. Praesent bibendum
+            quis velit a aliquam. Ut vestibulum turpis eget mi iaculis
+            ullamcorper. Curabitur nec metus sed tortor sollicitudin porta nec
+            eu enim. Ut fermentum scelerisque tortor mollis volutpat. Mauris
+            iaculis magna nisl, vel porttitor augue placerat et.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Card 2 -->
+    <section class="section-four">
+      <div class="container-card-2">
+        <div class="container-texts-card-2">
+          <h2 class="title-card-2">Lorem Ipsum</h2>
+          <div class="container-circle-description">
+            <div class="ellipse">
+              <img src="./assets/icons/icon-map-pin.svg" alt="Icone de localização" class="icon-map-pin" />
+            </div>
+            <p class="description-card-2">
+              Aenean massa. Cum sociis natoque penatibus et magnis dis
+              parturient montes, nascetur ridiculus mus. Donec quam felis,
+              ultricies nec, pellentesque eu, pretium quis, sem.
+            </p>
+          </div>
+          <div class="container-circle-description">
+            <div class="ellipse">
+              <img src="./assets/icons/icon-map-pin.svg" alt="Icone de localização" class="icon-map-pin" />
+            </div>
+            <p class="description-card-2">
+              Aenean massa. Cum sociis natoque penatibus et magnis dis
+              parturient montes, nascetur ridiculus mus. Donec quam felis,
+              ultricies nec, pellentesque eu, pretium quis, sem.
+            </p>
+          </div>
+          <div class="container-circle-description">
+            <div class="ellipse">
+              <img src="./assets/icons/icon-map-pin.svg" alt="Icone de localização" class="icon-map-pin" />
+            </div>
+            <p class="description-card-2">
+              Aenean massa. Cum sociis natoque penatibus et magnis dis
+              parturient montes, nascetur ridiculus mus. Donec quam felis,
+              ultricies nec, pellentesque eu, pretium quis, sem.
+            </p>
+          </div>
+        </div>
+        <img src="./assets/images/img-card-2.jpg" alt="Imagem do card" class="image-card-2" />
+      </div>
+    </section>
+
+    <!-- Seção de Card 3 -->
+    <section class="section-five">
+      <div class="container-card">
+        <div class="container-image-card">
+          <img src="./assets/images/img-card-1.png" alt="Imagem do card" class="image-card" />
+        </div>
+        <div class="container-texts-card">
+          <h2 class="title-card">Lorem Ipsum</h2>
+          <p class="description-card">
+            Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+            finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras
+            efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
+            lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas
+            fringilla porttitor tortor eget lacinia. Donec sollicitudin
+            euismod orci, auctor fringilla magna consequat interdum. Fusce
+            sagittis elit a libero commodo egestas efficitur id augue.
+          </p>
+          <p class="description-card">
+            Duis consectetur metus nec lacus auctor dignissim. Mauris vitae
+            finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras
+            efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
+            lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas
+            fringilla porttitor tortor eget lacinia. Donec sollicitudin
+            euismod orci, auctor fringilla magna consequat interdum. Fusce
+            sagittis elit a libero commodo egestas efficitur id augue.
+          </p>
+        </div>
+      </div>
+      <!-- Seção de Card 2 - Mobile -->
+      <div class="container-card-mobile">
+        <div class="container-image-card-mobile">
+          <img src="./assets/images/img-card-1-mobile.jpg" alt="Imagem do card" />
+        </div>
+        <div class="container-texts-card-mobile">
+          <h2 class="title-card-mobile">Lorem Ipsum</h2>
+          <p class="description-card-mobile">
+            Aenean massa. Cum sociis natoque penatibus et magnis dis
+            parturient montes, nascetur ridiculus mus. Donec quam felis,
+            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+            massa quis enim.
+            <br />
+            <br />
+            Cras dignissim est et pellentesque tincidunt. Praesent bibendum
+            quis velit a aliquam. Ut vestibulum turpis eget mi iaculis
+            ullamcorper. Curabitur nec metus sed tortor sollicitudin porta nec
+            eu enim. Ut fermentum scelerisque tortor mollis volutpat. Mauris
+            iaculis magna nisl, vel porttitor augue placerat et.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Carousel 2 -->
+    <section class="section-six">
+      <div class="container mt-4">
+        <div class="d-flex justify-content-between align-items-center">
+          <h5 class="m-0"><strong>Lançamentos</strong></h5>
+          <a class="text-decoration-none link-title-carousel" href="#">Ver mais</a>
+        </div>
+
+        <div id="carouselLancamentos2" class="carousel slide mt-3" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row row-cols-1 row-cols-md-5 g-3">
+                <!-- Card 1 -->
+                <div class="col">
+                  <div class="card h-100">
+                    <span class="badge position-absolute m-2 text-uppercase badge-new-carousel">Novo</span>
+                    <img src="./assets/images/img-carousel.jpg" class="card-img-top"
+                      alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
+                    <div class="card-body">
+                      <h6>
+                        Lorem ipsum dolor sit amet consectetuer adipiscing
+                        elit
+                      </h6>
+                      <small class="text-muted text-decoration-line-through">R$ 100,00</small>
+                      <span class="badge ms-2 badge-10-carousel text-decoration-underline">10% OFF</span>
+                      <p class="fw-bold mb-0">R$ 79,90</p>
+                      <small>Ou em até <strong>10x</strong> de
+                        <strong>R$ 7,90</strong></small>
+                    </div>
+                    <div class="card-footer text-center bg-white border-0">
+                      <button class="btn btn-primary w-100">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col">
+                  <div class="card h-100">
+                    <span class="badge position-absolute m-2 text-uppercase badge-new-carousel">Novo</span>
+                    <img src="./assets/images/img-carousel.jpg" class="card-img-top"
+                      alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
+                    <div class="card-body">
+                      <h6>
+                        Lorem ipsum dolor sit amet consectetuer adipiscing
+                        elit
+                      </h6>
+                      <small class="text-muted text-decoration-line-through">R$ 100,00</small>
+                      <span class="badge ms-2 badge-10-carousel text-decoration-underline">10% OFF</span>
+                      <p class="fw-bold mb-0">R$ 79,90</p>
+                      <small>Ou em até <strong>10x</strong> de
+                        <strong>R$ 7,90</strong></small>
+                    </div>
+                    <div class="card-footer text-center bg-white border-0">
+                      <button class="btn btn-primary w-100">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col">
+                  <div class="card h-100">
+                    <span class="badge position-absolute m-2 text-uppercase badge-new-carousel">Novo</span>
+                    <img src="./assets/images/img-carousel.jpg" class="card-img-top"
+                      alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
+                    <div class="card-body">
+                      <h6>
+                        Lorem ipsum dolor sit amet consectetuer adipiscing
+                        elit
+                      </h6>
+                      <small class="text-muted text-decoration-line-through">R$ 100,00</small>
+                      <span class="badge ms-2 badge-10-carousel text-decoration-underline">10% OFF</span>
+                      <p class="fw-bold mb-0">R$ 79,90</p>
+                      <small>Ou em até <strong>10x</strong> de
+                        <strong>R$ 7,90</strong></small>
+                    </div>
+                    <div class="card-footer text-center bg-white border-0">
+                      <button class="btn btn-primary w-100">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col">
+                  <div class="card h-100">
+                    <span class="badge position-absolute m-2 text-uppercase badge-new-carousel">Novo</span>
+                    <img src="./assets/images/img-carousel.jpg" class="card-img-top"
+                      alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
+                    <div class="card-body">
+                      <h6>
+                        Lorem ipsum dolor sit amet consectetuer adipiscing
+                        elit
+                      </h6>
+                      <small class="text-muted text-decoration-line-through">R$ 100,00</small>
+                      <span class="badge ms-2 badge-10-carousel text-decoration-underline">10% OFF</span>
+                      <p class="fw-bold mb-0">R$ 79,90</p>
+                      <small>Ou em até <strong>10x</strong> de
+                        <strong>R$ 7,90</strong></small>
+                    </div>
+                    <div class="card-footer text-center bg-white border-0">
+                      <button class="btn btn-primary w-100">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="col">
+                  <div class="card h-100">
+                    <span class="badge position-absolute m-2 text-uppercase badge-new-carousel">Novo</span>
+                    <img src="./assets/images/img-carousel.jpg" class="card-img-top"
+                      alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
+                    <div class="card-body">
+                      <h6>
+                        Lorem ipsum dolor sit amet consectetuer adipiscing
+                        elit
+                      </h6>
+                      <small class="text-muted text-decoration-line-through">R$ 100,00</small>
+                      <span class="badge ms-2 badge-10-carousel text-decoration-underline">10% OFF</span>
+                      <p class="fw-bold mb-0">R$ 79,90</p>
+                      <small>Ou em até <strong>10x</strong> de
+                        <strong>R$ 7,90</strong></small>
+                    </div>
+                    <div class="card-footer text-center bg-white border-0">
+                      <button class="btn btn-primary w-100">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row row-cols-1 row-cols-md-5 g-3">
+                <!-- Cards repetidos para o segundo slide -->
+                <!-- Card 1 -->
+                <div class="col">
+                  <div class="card h-100">
+                    <span class="badge position-absolute m-2 text-uppercase badge-new-carousel">Novo</span>
+                    <img src="./assets/images/img-carousel.jpg" class="card-img-top"
+                      alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
+                    <div class="card-body">
+                      <h6>
+                        Lorem ipsum dolor sit amet consectetuer adipiscing
+                        elit
+                      </h6>
+                      <small class="text-muted text-decoration-line-through">R$ 100,00</small>
+                      <span class="badge ms-2 badge-10-carousel text-decoration-underline">10% OFF</span>
+                      <p class="fw-bold mb-0">R$ 79,90</p>
+                      <small>Ou em até <strong>10x</strong> de
+                        <strong>R$ 7,90</strong></small>
+                    </div>
+                    <div class="card-footer text-center bg-white border-0">
+                      <button class="btn btn-primary w-100">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col">
+                  <div class="card h-100">
+                    <span class="badge position-absolute m-2 text-uppercase badge-new-carousel">Novo</span>
+                    <img src="./assets/images/img-carousel.jpg" class="card-img-top"
+                      alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
+                    <div class="card-body">
+                      <h6>
+                        Lorem ipsum dolor sit amet consectetuer adipiscing
+                        elit
+                      </h6>
+                      <small class="text-muted text-decoration-line-through">R$ 100,00</small>
+                      <span class="badge ms-2 badge-10-carousel text-decoration-underline">10% OFF</span>
+                      <p class="fw-bold mb-0">R$ 79,90</p>
+                      <small>Ou em até <strong>10x</strong> de
+                        <strong>R$ 7,90</strong></small>
+                    </div>
+                    <div class="card-footer text-center bg-white border-0">
+                      <button class="btn btn-primary w-100">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col">
+                  <div class="card h-100">
+                    <span class="badge position-absolute m-2 text-uppercase badge-new-carousel">Novo</span>
+                    <img src="./assets/images/img-carousel.jpg" class="card-img-top"
+                      alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
+                    <div class="card-body">
+                      <h6>
+                        Lorem ipsum dolor sit amet consectetuer adipiscing
+                        elit
+                      </h6>
+                      <small class="text-muted text-decoration-line-through">R$ 100,00</small>
+                      <span class="badge ms-2 badge-10-carousel text-decoration-underline">10% OFF</span>
+                      <p class="fw-bold mb-0">R$ 79,90</p>
+                      <small>Ou em até <strong>10x</strong> de
+                        <strong>R$ 7,90</strong></small>
+                    </div>
+                    <div class="card-footer text-center bg-white border-0">
+                      <button class="btn btn-primary w-100">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col">
+                  <div class="card h-100">
+                    <span class="badge position-absolute m-2 text-uppercase badge-new-carousel">Novo</span>
+                    <img src="./assets/images/img-carousel.jpg" class="card-img-top"
+                      alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
+                    <div class="card-body">
+                      <h6>
+                        Lorem ipsum dolor sit amet consectetuer adipiscing
+                        elit
+                      </h6>
+                      <small class="text-muted text-decoration-line-through">R$ 100,00</small>
+                      <span class="badge ms-2 badge-10-carousel text-decoration-underline">10% OFF</span>
+                      <p class="fw-bold mb-0">R$ 79,90</p>
+                      <small>Ou em até <strong>10x</strong> de
+                        <strong>R$ 7,90</strong></small>
+                    </div>
+                    <div class="card-footer text-center bg-white border-0">
+                      <button class="btn btn-primary w-100">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="col">
+                  <div class="card h-100">
+                    <span class="badge position-absolute m-2 text-uppercase badge-new-carousel">Novo</span>
+                    <img src="./assets/images/img-carousel.jpg" class="card-img-top"
+                      alt="Imagem de um homem vestindo uma camiseta branca, sorrindo e com uma mão no bolso" />
+                    <div class="card-body">
+                      <h6>
+                        Lorem ipsum dolor sit amet consectetuer adipiscing
+                        elit
+                      </h6>
+                      <small class="text-muted text-decoration-line-through">R$ 100,00</small>
+                      <span class="badge ms-2 badge-10-carousel text-decoration-underline">10% OFF</span>
+                      <p class="fw-bold mb-0">R$ 79,90</p>
+                      <small>Ou em até <strong>10x</strong> de
+                        <strong>R$ 7,90</strong></small>
+                    </div>
+                    <div class="card-footer text-center bg-white border-0">
+                      <button class="btn btn-primary w-100">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="menu-footer">
-            <h4 class="title-menu-footer">Institucional</h4>
-            <ul class="list-menu-footer">
-              <li class="item-menu-footer"><a href="#">Sobre Nós</a></li>
-              <li class="item-menu-footer"><a href="#">Nossas Lojas</a></li>
-              <li class="item-menu-footer">
-                <a href="#">Privacidade e Segurança</a>
-              </li>
-              <li class="item-menu-footer">
-                <a href="#">Termos e Condições</a>
-              </li>
-            </ul>
-          </div>
-          <div class="menu-footer">
-            <h4 class="title-menu-footer">Central de ajuda</h4>
-            <ul class="list-menu-footer">
-              <li class="item-menu-footer"><a href="#">Fale Conosco</a></li>
-              <li class="item-menu-footer">
-                <a href="#">Frete e Entrega</a>
-              </li>
-              <li class="item-menu-footer">
-                <a href="#">Trocas e Devoluções</a>
-              </li>
-              <li class="item-menu-footer">
-                <a href="#">Formas de Pagamento</a>
-              </li>
-              <li class="item-menu-footer">
-                <a href="#">FAQ</a>
-              </li>
-            </ul>
-          </div>
-          <div class="menu-footer">
-            <h4 class="title-menu-footer">Atendimento</h4>
-            <ul class="list-menu-footer">
-              <li class="item-menu-footer">
-                <a href="https://api.whatsapp.com/send?phone=550012345678"
-                  ><span class="item-footer-highline"> Telefone: </span>(00)
-                  1234-5678</a
-                >
-              </li>
-              <li class="item-menu-footer">
-                <a href="mailto:exemplo@exemplo.com.br"
-                  ><span class="item-footer-highline">E-mail: </span
-                  >exemplo@exemplo.com.br</a
-                >
-              </li>
-              <li class="item-menu-footer-hour">
-                <span class="item-footer-highline-hour"
-                  >Horario de atendimento:
-                </span>
-                <br />
-                Segunda a Sábado: 07h00 às 23h00
-                <br />
-                Domingos e Feriados: 07h00 às 21h00
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="container-logos">
-          <img
-            src="./assets/images/amex-logo.svg"
-            alt="Logo Amex" />
-          <img
-            src="./assets/images/mastercard-logo.svg"
-            alt="Logo Mastercard" />
-          <img
-            src="./assets/images/visa-logo.svg"
-            alt="Logo Visa" />
-          <img
-            src="./assets/images/hipercard-logo.svg"
-            alt="Logo Hipercard" />
-          <img
-            src="./assets/images/elo-logo.svg"
-            alt="Logo Elo" />
-          <img
-            src="./assets/images/marca-logo.svg"
-            alt="Logo Marca" />
-          <img
-            src="./assets/images/paypal-logo.svg"
-            alt="Logo Paypal" />
-          <img
-            src="./assets/images/uniao-39-logo.svg"
-            alt="Logo União 39" />
-          <img
-            src="./assets/images/icon-boleto.svg"
-            alt="Icone Boleto" />
+
+          <!-- Controles Carousel -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselLancamentos2"
+            data-bs-slide="prev">
+            <i class="bi bi-arrow-left-circle icon-arrow-carousel"></i>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselLancamentos2"
+            data-bs-slide="next">
+            <i class="bi bi-arrow-right-circle icon-arrow-carousel"></i>
+          </button>
         </div>
       </div>
-      <div class="container-footer-two">
-        <div class="container-footer-two-text">
-          <p class="text-footer-two">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-            consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
-            velit esse molestie consequat, vel illum dolore eu feugiat nulla
-            facilisis at vero eros et accumsan et iusto odio dignissim qui
-            blandit praesent luptatum zzril delenit augue duis dolore te feugait
-            nulla facilisi.
-          </p>
-          <!-- Text Mobile -->
-          <p class="text-footer-two-mobile">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.
-          </p>
+    </section>
+
+    <!-- Seção banner -->
+    <section class="section-seven">
+      <div class="background-text-banner">
+        <p class="text-banner">
+          Entre em contato conosco e verifique a disponibilidade para sua
+          região!
+        </p>
+      </div>
+    </section>
+
+    <!-- Seção Newsletter -->
+    <section class="section-eight">
+      <!-- <div class="container-newsletter"> -->
+      <h1 class="title-newsletter">
+        Cadastre-se na nossa <span class="span-newsletter">newsletter</span>
+      </h1>
+      <!-- </div> -->
+      <div class="container-cadastro">
+        <input type="text" class="input-newsletter-name" placeholder="Digite seu nome" />
+        <input type="email" class="input-newsletter-email" placeholder="Digite seu e-mail" />
+        <div class="container-newsletter-checkbox">
+          <input type="checkbox" id="checkbox-newsletter" class="input-newsletter-checkbox" />
+          <label for="checkbox-newsletter" class="label-newsletter-checkbox">
+            Estou de acordo com a
+            <span class="span-newsletter-checkbox">Política de Privacidade</span>
+          </label>
         </div>
-        <div class="container-logo-footer-two">
-          <img
-            src="./assets/images/lets-encrypt.jpg"
-            alt="Logo Let's Encrypt" />
-          <img
-            src="./assets/images/vtex-pci-certified.jpg"
-            alt="Logo VTEX PCI Certified" />
-          <vr class="separator-vertical"></vr>
-          <img
-            src="./assets/images/logo-avanti-mini.jpg"
-            alt="Logo Avanti" />
-          <img
-            src="./assets/images/logo-vtex.jpg"
-            alt="Logo VTEX" />
+        <button type="button" class="button-newsletter">
+          <span class="button-newsletter-text">Cadastrar</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container-footer">
+      <div class="container-menu-footer">
+        <div class="container-menu-footer-logo-social">
+          <img src="./assets/images/logo-avanti.svg" alt="Logo Avanti" class="logo-avanti-footer" />
+          <div class="container-social-media">
+            <a href="..." class="link-social-media"><i class="fa-brands fa-instagram"></i></a>
+            <a href="..." class="link-social-media"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="..." class="link-social-media"><img src="./assets/icons/youtube-icon.svg" alt="Icone do youtube" />
+            </a>
+            <a href="..." class="link-social-media"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="menu-footer">
+          <h4 class="title-menu-footer">Institucional</h4>
+          <ul class="list-menu-footer">
+            <li class="item-menu-footer"><a href="#">Sobre Nós</a></li>
+            <li class="item-menu-footer"><a href="#">Nossas Lojas</a></li>
+            <li class="item-menu-footer">
+              <a href="#">Privacidade e Segurança</a>
+            </li>
+            <li class="item-menu-footer">
+              <a href="#">Termos e Condições</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-footer">
+          <h4 class="title-menu-footer">Central de ajuda</h4>
+          <ul class="list-menu-footer">
+            <li class="item-menu-footer"><a href="#">Fale Conosco</a></li>
+            <li class="item-menu-footer">
+              <a href="#">Frete e Entrega</a>
+            </li>
+            <li class="item-menu-footer">
+              <a href="#">Trocas e Devoluções</a>
+            </li>
+            <li class="item-menu-footer">
+              <a href="#">Formas de Pagamento</a>
+            </li>
+            <li class="item-menu-footer">
+              <a href="#">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-footer">
+          <h4 class="title-menu-footer">Atendimento</h4>
+          <ul class="list-menu-footer">
+            <li class="item-menu-footer">
+              <a href="https://api.whatsapp.com/send?phone=550012345678"><span class="item-footer-highline"> Telefone:
+                </span>(00)
+                1234-5678</a>
+            </li>
+            <li class="item-menu-footer">
+              <a href="mailto:exemplo@exemplo.com.br"><span class="item-footer-highline">E-mail:
+                </span>exemplo@exemplo.com.br</a>
+            </li>
+            <li class="item-menu-footer-hour">
+              <span class="item-footer-highline-hour">Horario de atendimento:
+              </span>
+              <br />
+              Segunda a Sábado: 07h00 às 23h00
+              <br />
+              Domingos e Feriados: 07h00 às 21h00
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-      crossorigin="anonymous"></script>
-    <script src="./main.js"></script>
-  </body>
+      <div class="container-logos">
+        <img src="./assets/images/amex-logo.svg" alt="Logo Amex" />
+        <img src="./assets/images/mastercard-logo.svg" alt="Logo Mastercard" />
+        <img src="./assets/images/visa-logo.svg" alt="Logo Visa" />
+        <img src="./assets/images/hipercard-logo.svg" alt="Logo Hipercard" />
+        <img src="./assets/images/elo-logo.svg" alt="Logo Elo" />
+        <img src="./assets/images/marca-logo.svg" alt="Logo Marca" />
+        <img src="./assets/images/paypal-logo.svg" alt="Logo Paypal" />
+        <img src="./assets/images/uniao-39-logo.svg" alt="Logo União 39" />
+        <img src="./assets/images/icon-boleto.svg" alt="Icone Boleto" />
+      </div>
+    </div>
+    <div class="container-footer-two">
+      <div class="container-footer-two-text">
+        <p class="text-footer-two">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+          volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+          ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+          consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+          velit esse molestie consequat, vel illum dolore eu feugiat nulla
+          facilisis at vero eros et accumsan et iusto odio dignissim qui
+          blandit praesent luptatum zzril delenit augue duis dolore te feugait
+          nulla facilisi.
+        </p>
+        <!-- Text Mobile -->
+        <p class="text-footer-two-mobile">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+          volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.
+        </p>
+      </div>
+      <div class="container-logo-footer-two">
+        <img src="./assets/images/lets-encrypt.jpg" alt="Logo Let's Encrypt" />
+        <img src="./assets/images/vtex-pci-certified.jpg" alt="Logo VTEX PCI Certified" />
+        <vr class="separator-vertical"></vr>
+        <img src="./assets/images/logo-avanti-mini.jpg" alt="Logo Avanti" />
+        <img src="./assets/images/logo-vtex.jpg" alt="Logo VTEX" />
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+</body>
+
 </html>
