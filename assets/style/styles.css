@@ -565,6 +565,18 @@ body {
   font-size: 30px;
 }
 
+.carousel-indicators-second {
+  margin-bottom: -16px;
+}
+
+/* dots do carousel */
+.carousel-indicators-second [data-bs-target] {
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  background-color: #838383;
+}
+
 /* ====== Section Three ====== */
 .section-three {
   max-width: 1177px;
@@ -1072,12 +1084,12 @@ footer {
     width: 100%;
   }
 
-  .carousel-indicators {
+  .carousel-indicators-first {
     margin-bottom: 0px;
   }
 
   /* dots do carousel */
-  .carousel-indicators [data-bs-target] {
+  .carousel-indicators-first [data-bs-target] {
     border-radius: 50%;
     width: 7px;
     height: 7px;
@@ -1146,6 +1158,18 @@ footer {
   .carousel-control-prev,
   .carousel-control-next {
     display: none;
+  }
+
+  .carousel-indicators-second {
+    margin-bottom: -30px;
+  }
+
+  /* dots do carousel */
+  .carousel-indicators [data-bs-target] {
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+    background-color: #838383;
   }
 
   .card img {
