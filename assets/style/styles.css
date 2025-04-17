@@ -1056,7 +1056,7 @@ footer {
 
   /* ======= Section One ======= */
   .section-one {
-    width: 100%;
+    max-width: 100%;
     justify-content: flex-start;
   }
 
@@ -1065,14 +1065,26 @@ footer {
   .container-banner {
     display: none;
   }
+
   /* Exibe o slider mobile */
   .mobile-slider {
     display: flex;
     width: 100%;
   }
 
+  .carousel-indicators {
+    margin-bottom: 0px;
+  }
+
+  /* dots do carousel */
+  .carousel-indicators [data-bs-target] {
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+    background-color: #838383;
+  }
+
   .container-banner-mobile {
-    max-width: 100%;
     display: flex;
   }
 
@@ -1080,11 +1092,11 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 12px;
+    text-align: center;
   }
 
   .banner-title-highlight {
-    color: #000000;
-    text-align: center;
     font-size: 40px;
     line-height: 40px;
   }
@@ -1097,6 +1109,7 @@ footer {
   .banner-title {
     font-size: 40px;
     line-height: 40px;
+    margin: 0;
   }
 
   .banner-subtitle {
@@ -1106,16 +1119,15 @@ footer {
   .banner-subtitle-mobile {
     display: block;
     color: #005cff;
-    font-family: "Nunito Sans", sans-serif;
     font-size: 12px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     text-transform: uppercase;
+    margin: 0;
   }
 
   .banner-discount {
     font-size: 32px;
+    margin: 0;
   }
 
   /* ======= Section Two ======= */
